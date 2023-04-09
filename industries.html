@@ -4,13 +4,23 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230409010631" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230409010631">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230410013914" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230410013914">
 	<title>Industries</title>
 </head>
 
 <body>
 	<style>
+		.main-banner {
+			margin-bottom: 0;
+		}
+
+		@media(min-width:768px) {
+			.main-banner {
+				margin-bottom: 50px;
+			}
+		}
+
 		.choose {
 			background: transparent;
 		}
@@ -19,12 +29,44 @@
 			background: #DFDFDF;
 		}
 
+		.choose__slider .swiper-pagination-bullet.swiper-pagination-bullet-active {
+			background: #D1CB28;
+			border: none;
+		}
+
 		.choose__slide-wrap2 {
 			background: #454545;
 		}
 
 		.choose__slide-wrap2 .choose__slide-txt {
 			color: white;
+		}
+
+		@media(min-width:1440px) {
+			.choose__slide-wrap {
+				height: 415px !important;
+			}
+
+			.choose-key .choose__slide-wrap {
+				margin-top: 105px;
+			}
+
+			.choose-key .choose__pagination {
+				top: 176px;
+			}
+
+			.choose__slide-title {
+				min-height: auto;
+				align-items: none;
+			}
+
+			.choose-key .swiper-button-next.choose__next {
+				top: 176px;
+			}
+
+			.choose-key .swiper-button-prev.choose__prev {
+				top: 176px;
+			}
 		}
 
 		.choose__slide-wrap2 .num-choose-2 {
@@ -37,9 +79,17 @@
 			opacity: 0.06;
 		}
 
-		.choose__slide-wrap2 .black-arrow {
-			right: 123px;
+		.choose__slide-wrap .num-choose {
+			color: #197EB1;
+			opacity: 0.06;
 		}
+
+		@media(max-width:768px) {
+			.choose__slide-wrap2 .black-arrow {
+				right: 123px;
+			}
+		}
+
 
 		.choose__slide-wrap2 .choose__slide-title2 {
 			background: linear-gradient(90deg, #48DCA6 0%, #3CA0D2 25.46%);
@@ -47,9 +97,10 @@
 			-webkit-text-fill-color: transparent;
 			min-height: auto;
 		}
-	.choose__btn{
-		background: linear-gradient(90deg, #D1CB28 4.89%, #48DCA6 95.57%);
-	}
+
+		.choose__btn {
+			background: linear-gradient(90deg, #D1CB28 4.89%, #48DCA6 95.57%);
+		}
 	</style>
 	<div class="wrapper">
 		<header class="header">
@@ -146,6 +197,8 @@
 			<p class="industries__sub-title">From Manufacturing & Automotive, Healthcare & Life Science, and Logistics, to
 				Retail, B2B & B2C eCommerce, and more. Explore more about Salesforce Solutions for your industry’s unique needs.
 			</p>
+			<p class="industries__sub-title industries__sub-title-desc">At Routine Automation, we understand that every industry has its own unique challenges when it comes to implementing Salesforce CRM solutions. From Manufacturing & Automotive, Healthcare & Life Science, and Logistics, to Retail, B2B & B2C eCommerce, and more. Explore more about Salesforce Solutions for your industry’s unique needs. 
+			</p>
 			<button class="industries-filter">
 				<div class="industries-filter__top">
 					<span class="industries-filter__txt">Choose your industry</span>
@@ -157,6 +210,7 @@
 						</svg>
 					</div>
 				</div>
+				<div class="industries-filter__btn">Call to Action</div>
 				<ul class="industries-filter__options">
 					<div class="industries-filter__wrap">
 						<li class="industries-filter__option">
@@ -222,201 +276,274 @@
 			</button>
 			<span class="industries-filter__bot">or find the right one below</span>
 		</div>
-		<div class="industries-cards">
-			<a class="industries-cards__item industries-card-1" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center">
-						<img class="industries-cards__img" src="img/card-1.svg" alt="Automotive">
-				</div>
-				<h6 class="industries-cards__title">Automotive</h6>
-			</a>
-			<a class="industries-cards__item industries-card-2" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-2.svg" alt="Insurance"></div>
-				
-				<h6 class="industries-cards__title">Insurance</h6>
-			</a>		
-			<a class="industries-cards__item industries-card-3" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-3.svg" alt="Manufacturing"></div>
-				
-				<h6 class="industries-cards__title">Manufacturing</h6>
-			</a>
-			<a class="industries-cards__item industries-card-4" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-4.svg" alt="Energy & Utilities"></div>
-				<h6 class="industries-cards__title">Energy & Utilities</h6>
-			</a>
-			<a class="industries-cards__item industries-card-5" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-5.svg" alt="Energy & Utilities"></div>
-				<h6 class="industries-cards__title">Logistics</h6>
-			</a>
-			<a class="industries-cards__item industries-card-6" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-6.svg" alt="Energy & Utilities"></div>
-				<h6 class="industries-cards__title">Telecom-s</h6>
-			</a>
-			<a class="industries-cards__item industries-card-7" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-7.svg" alt="Energy & Utilities"></div>
-				<h6 class="industries-cards__title">Retail</h6>
-			</a>
-			<a class="industries-cards__item industries-card-8" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-8.svg" alt="Energy & Utilities"></div>
-				<h6 class="industries-cards__title">eCommerce</h6>
-			</a>
-			<a class="industries-cards__item industries-card-9" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-9.svg" alt="Travel & Hospitality"></div>
-				<h6 class="industries-cards__title">Travel & Hospitality</h6>
-			</a>
-			<a class="industries-cards__item industries-card-10" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-10.svg" alt="Education"></div>
-				<h6 class="industries-cards__title">Education</h6>
-			</a>
-			<a class="industries-cards__item industries-card-11" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-11.svg" alt="Healthcare"></div>
-				<h6 class="industries-cards__title">Healthcare</h6>
-			</a>
-			<a class="industries-cards__item industries-card-12" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-12.svg" alt="Finance"></div>
-				<h6 class="industries-cards__title">Finance</h6>
-			</a>
-			<a class="industries-cards__item industries-card-13" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-13.svg" alt="Networking"></div>
-				<h6 class="industries-cards__title">Networking</h6>
-			</a>
-			<a class="industries-cards__item industries-card-14" href="">
-				<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<path d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z" fill="url(#paint0_linear_1302_4730)"/>
-					<defs>
-					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599" gradientUnits="userSpaceOnUse">
-					<stop stop-color="#3CA0D2"/>
-					<stop offset="1" stop-color="#48DCA6"/>
-					</linearGradient>
-					</defs>
-				</svg>
-				<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-14.svg" alt="Nonprofit"></div>
-				<h6 class="industries-cards__title">Nonprofit</h6>
-			</a>
-		</div>
 	</div>
 </section>
+<div class="container">
+	<div class="industries-cards">
+		<a class="industries-cards__item industries-card-1" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center">
+				<img class="industries-cards__img" src="img/card-1.svg" alt="Automotive">
+			</div>
+			<h6 class="industries-cards__title">Automotive</h6>
+		</a>
+		<a class="industries-cards__item industries-card-2" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-2.svg" alt="Insurance">
+			</div>
 
+			<h6 class="industries-cards__title">Insurance</h6>
+		</a>
+		<a class="industries-cards__item industries-card-3" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-3.svg" alt="Manufacturing">
+			</div>
+
+			<h6 class="industries-cards__title">Manufacturing</h6>
+		</a>
+		<a class="industries-cards__item industries-card-4" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-4.svg"
+					alt="Energy & Utilities"></div>
+			<h6 class="industries-cards__title">Energy & Utilities</h6>
+		</a>
+		<a class="industries-cards__item industries-card-5" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-5.svg"
+					alt="Energy & Utilities"></div>
+			<h6 class="industries-cards__title">Logistics</h6>
+		</a>
+		<a class="industries-cards__item industries-card-6" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-6.svg"
+					alt="Energy & Utilities"></div>
+			<h6 class="industries-cards__title">Telecom-s</h6>
+		</a>
+		<a class="industries-cards__item industries-card-7" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-7.svg"
+					alt="Energy & Utilities"></div>
+			<h6 class="industries-cards__title">Retail</h6>
+		</a>
+		<a class="industries-cards__item industries-card-8" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-8.svg"
+					alt="Energy & Utilities"></div>
+			<h6 class="industries-cards__title">eCommerce</h6>
+		</a>
+		<a class="industries-cards__item industries-card-9" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-9.svg"
+					alt="Travel & Hospitality"></div>
+			<h6 class="industries-cards__title">Travel & Hospitality</h6>
+		</a>
+		<a class="industries-cards__item industries-card-10" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-10.svg" alt="Education">
+			</div>
+			<h6 class="industries-cards__title">Education</h6>
+		</a>
+		<a class="industries-cards__item industries-card-11" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-11.svg" alt="Healthcare">
+			</div>
+			<h6 class="industries-cards__title">Healthcare</h6>
+		</a>
+		<a class="industries-cards__item industries-card-12" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-12.svg" alt="Finance">
+			</div>
+			<h6 class="industries-cards__title">Finance</h6>
+		</a>
+		<a class="industries-cards__item industries-card-13" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-13.svg" alt="Networking">
+			</div>
+			<h6 class="industries-cards__title">Networking</h6>
+		</a>
+		<a class="industries-cards__item industries-card-14" href="">
+			<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+					fill="url(#paint0_linear_1302_4730)" />
+				<defs>
+					<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+						gradientUnits="userSpaceOnUse">
+						<stop stop-color="#3CA0D2" />
+						<stop offset="1" stop-color="#48DCA6" />
+					</linearGradient>
+				</defs>
+			</svg>
+			<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-14.svg" alt="Nonprofit">
+			</div>
+			<h6 class="industries-cards__title">Nonprofit</h6>
+		</a>
+	</div>
+</div>
 			<section class="choose choose-key">
 				<div class="container">
 					<div class="choose__body wow animate__animated animate__fadeInUp">
-						<picture><source srcset="img/choose.webp" type="image/webp"><img class="choose__mob" src="img/choose.png" alt="choose"></picture>
+						<picture><source srcset="img/choose2.webp" type="image/webp"><img class="choose__mob" src="img/choose2.png" alt="choose"></picture>
+						<h4 class="industries-choose__title">Experience <span>the Benefits</span> of RA</h4>
+						<h4 class="industries-choose__title industries-choose__title-desc">Experience <span>the Benefits</span> of
+							Routine Automation</h4>
 						<div class="swiper choose__slider2">
 							<div class="choose__slider2-wrapper swiper-wrapper">
 								<div class="swiper-slide choose__slide-wrap2">
@@ -491,51 +618,64 @@
 								<div class="swiper-slide choose__slide-wrap">
 									<span class="num-choose-2">01</span>
 									<span class="num-choose">01</span>
-									<img class="black-arrow" src="img/arrow-white.svg" alt="arrow">
-									<h6 class="choose__slide-title">Automate business processes</h6>
-									<p class="choose__slide-txt">By integrating Salesforce with other systems such as marketing
-										automation, customer service, and e-commerce platforms, businesses can streamline their processes.
-										This reduces the need for manual data entry and minimizes errors.</p>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Technical Consulting</h6>
+									<p class="choose__slide-txt">RA have skilled Salesforce consultants on board to conduct top-notch
+										consulting and give recommendations on how to improve or start the usage of Salesforce platform.
+										Whether it's Sales, Service or Marketing Cloud, all of these and even more.  </p>
 								</div>
 								<div class="swiper-slide choose__slide-wrap">
 									<span class="num-choose">02</span>
 									<span class="num-choose-2">02</span>
-									<img class="black-arrow" src="img/arrow-white.svg" alt="arrow">
-									<h6 class="choose__slide-title">Ensure that data is accurate</h6>
-									<p class="choose__slide-txt">Up-to-date, and consistent across different platforms. This improves data
-										quality and enables more accurate reporting and analysis.</p>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Certified Salesforce Partner</h6>
+									<p class="choose__slide-txt">50+ certifies Salesforce experts, with over 200 successful business
+										projects completed including developers, administrators, consultants, and architects and steadily
+										growing.</p>
 								</div>
 								<div class="swiper-slide choose__slide-wrap">
 									<span class="num-choose">03</span>
 									<span class="num-choose-2">03</span>
-									<img class="black-arrow" src="img/arrow-white.svg" alt="arrow">
-									<h6 class="choose__slide-title">Access information more quickly and easily</h6>
-									<p class="choose__slide-txt">This leads to increased productivity and efficiency.</p>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Transparent communication</h6>
+									<p class="choose__slide-txt">RA account and project managers provide regular reports, updates, and
+										progress tracking to ensure that you're always in the loop for clear and consistent communication
+										throughout every stage of development.</p>
 								</div>
 								<div class="swiper-slide choose__slide-wrap">
 									<span class="num-choose">04</span>
 									<span class="num-choose-2">04</span>
-									<img class="black-arrow" src="img/arrow-white.svg" alt="arrow">
-									<h6 class="choose__slide-title">Salesforce integration with customer service platforms</h6>
-									<p class="choose__slide-txt">Enables businesses to provide a better customer experience. Customer
-										service representatives can access customer information quickly and easily, leading to better
-										service.</p>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Technical Consulting</h6>
+									<p class="choose__slide-txt">RA have skilled Salesforce consultants on board to conduct top-notch
+										consulting and give recommendations on how to improve or start the usage of Salesforce platform.
+										Whether it's Sales, Service or Marketing Cloud, all of these and even more.</p>
 								</div>
 								<div class="swiper-slide choose__slide-wrap">
 									<span class="num-choose">05</span>
 									<span class="num-choose-2">05</span>
-									<img class="black-arrow" src="img/arrow-white.svg" alt="arrow">
-									<h6 class="choose__slide-title">Provide your business with more comprehensive data</h6>
-									<p class="choose__slide-txt">This enables them to gain insights into customer behavior, sales trends,
-										and other key metrics. In turn, this helps businesses make more informed decisions and identify
-										areas for improvement. </p>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Narrow Expertise</h6>
+									<p class="choose__slide-txt">The Routine Automation team has deep expertise in narrow Salesforce
+										areas, such as Salesforce Industries (new name for Vlocity), B2C Commerce Cloud, Mulesoft and more.
+										We are also committed to staying up to date with the latest industry trends and technologies.</p>
 								</div>
 								<div class="swiper-slide choose__slide-wrap">
 									<span class="num-choose">06</span>
 									<span class="num-choose-2">06</span>
-									<img class="black-arrow" src="img/arrow-white.svg" alt="arrow">
-									<h6 class="choose__slide-title">Automate processes and reduce manual work</h6>
-									<p class="choose__slide-txt">This helps them scale more easily.</p>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Estimation</h6>
+									<p class="choose__slide-txt">Our team delivers accurate work capacity estimations. We take a control
+										of all working processes with the help of Jira to finish scopes of tasks on time.</p>
+								</div>
+								<div class="swiper-slide choose__slide-wrap">
+									<span class="num-choose">07</span>
+									<span class="num-choose-2">07</span>
+									<img class="black-arrow" src="img/black-arr.svg" alt="arrow">
+									<h6 class="choose__slide-title">Flexibility</h6>
+									<p class="choose__slide-txt">We understand that your business needs may change over time, and we are
+										committed to adapting our solutions to meet those changing needs. RA team is agile and adaptable and
+										a quick start.</p>
 								</div>
 							</div>
 							<div class="swiper-pagination choose__pagination"></div>
@@ -548,8 +688,433 @@
 			</section>
 
 
+				<section class="reviews">
+	<div class="reviews__container">
+		<div class="reviews__body wow animate__animated animate__zoomIn">
+			<div class="reviews__circle">
+				<div class="reviews__top">
+					<h3 class="reviews__title">Reviews</h3>
+					<span class="reviews__text">Join 250 + companies who’ve reached Salesforce bliss with Routine Automation</span>
+				</div>
+				<div class="reviews__center">
+					<div class="swiper reviews__slider wow animate__animated animate__fadeInUp">
+						<div class="reviews__slider-wrapper swiper-wrapper">
+							<div class="swiper-slide reviews__slide-wrap">
+								<div class="reviews__slide-top">
+									<picture><source srcset="img/reviews.webp" type="image/webp"><img class="reviews__slide-img" src="img/reviews.png" alt="simple"></picture>
+									<div class="reviews__slide-top-item">
+										<span class="reviews__name">Ivan Gammel</span>
+										<span class="reviews__org">Dr Smile | СТО</span>
+										<div class="reviews__rating">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star2.svg" alt="star">
+										</div>
+									</div>
+								</div>
+								<h6 class="reviews__center-title">They’ve saved the team more than $112,000 this yearThanks to Routine Automation’s work, the client’s ROI is great.</h6>
+								<p class="reviews__center-txt">Their excellent communication and adaptability to the client’s processes have been key to the project’s success. Their main strength is their expertise — they have great Salesforce engineers. They should keep doing what they’re doing.</p>
+							</div>
+							<div class="swiper-slide reviews__slide-wrap">
+								<div class="reviews__slide-top">
+									<picture><source srcset="img/reviews.webp" type="image/webp"><img class="reviews__slide-img" src="img/reviews.png" alt="simple"></picture>
+									<div class="reviews__slide-top-item">
+										<span class="reviews__name">Ivan Gammel</span>
+										<span class="reviews__org">Dr Smile | СТО</span>
+										<div class="reviews__rating">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star2.svg" alt="star">
+										</div>
+									</div>
+								</div>
+								<h6 class="reviews__center-title">They’ve saved the team more than $112,000 this yearThanks to Routine Automation’s work, the client’s ROI is great.</h6>
+								<p class="reviews__center-txt">Their excellent communication and adaptability to the client’s processes have been key to the project’s success. Their main strength is their expertise — they have great Salesforce engineers. They should keep doing what they’re doing.</p>
+							</div>
+							<div class="swiper-slide reviews__slide-wrap">
+								<div class="reviews__slide-top">
+									<picture><source srcset="img/reviews.webp" type="image/webp"><img class="reviews__slide-img" src="img/reviews.png" alt="simple"></picture>
+									<div class="reviews__slide-top-item">
+										<span class="reviews__name">Ivan Gammel</span>
+										<span class="reviews__org">Dr Smile | СТО</span>
+										<div class="reviews__rating">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star2.svg" alt="star">
+										</div>
+									</div>
+								</div>
+								<h6 class="reviews__center-title">They’ve saved the team more than $112,000 this yearThanks to Routine Automation’s work, the client’s ROI is great.</h6>
+								<p class="reviews__center-txt">Their excellent communication and adaptability to the client’s processes have been key to the project’s success. Their main strength is their expertise — they have great Salesforce engineers. They should keep doing what they’re doing.</p>
+							</div>
+							<div class="swiper-slide reviews__slide-wrap">
+								<div class="reviews__slide-top">
+									<picture><source srcset="img/reviews.webp" type="image/webp"><img class="reviews__slide-img" src="img/reviews.png" alt="simple"></picture>
+									<div class="reviews__slide-top-item">
+										<span class="reviews__name">Ivan Gammel</span>
+										<span class="reviews__org">Dr Smile | СТО</span>
+										<div class="reviews__rating">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star2.svg" alt="star">
+										</div>
+									</div>
+								</div>
+								<h6 class="reviews__center-title">They’ve saved the team more than $112,000 this yearThanks to Routine Automation’s work, the client’s ROI is great.</h6>
+								<p class="reviews__center-txt">Their excellent communication and adaptability to the client’s processes have been key to the project’s success. Their main strength is their expertise — they have great Salesforce engineers. They should keep doing what they’re doing.</p>
+							</div>
+							<div class="swiper-slide reviews__slide-wrap">
+								<div class="reviews__slide-top">
+									<picture><source srcset="img/reviews.webp" type="image/webp"><img class="reviews__slide-img" src="img/reviews.png" alt="simple"></picture>
+									<div class="reviews__slide-top-item">
+										<span class="reviews__name">Ivan Gammel</span>
+										<span class="reviews__org">Dr Smile | СТО</span>
+										<div class="reviews__rating">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star.svg" alt="star">
+											<img class="reviews__rating-star" src="img/reviews-star2.svg" alt="star">
+										</div>
+									</div>
+								</div>
+								<h6 class="reviews__center-title">They’ve saved the team more than $112,000 this yearThanks to Routine Automation’s work, the client’s ROI is great.</h6>
+								<p class="reviews__center-txt">Their excellent communication and adaptability to the client’s processes have been key to the project’s success. Their main strength is their expertise — they have great Salesforce engineers. They should keep doing what they’re doing.</p>
+							</div>
+						</div>
+						<div class="swiper-pagination reviews__pagination"></div>
+						<div class="swiper-button-prev reviews__prev"></div>
+						<div class="swiper-button-next reviews__next"></div>
+					</div>
+				</div>
+				<div class="reviews__bottom">
+					<button class="reviews__btn"><span>Call to action button</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="reviews__bottom">
+	<button class="reviews__btn reviews__bottom-mob"><span>Call to action button</span></button>
+</div>
+
+
+
+
+				<div class="row">
+
+		<div class="swiper row__slider wow animate__animated animate__fadeInUp">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide row__slide" >
+					<img class="row__img" src="img/row.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row2.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row2.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row2.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row2.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row.svg" alt="row">
+				</div>
+				<div class="swiper-slide row__slide">
+					<img class="row__img" src="img/row2.svg" alt="row">
+				</div>
+			</div>
+		</div>
+</div>
+				<section class="faq">
+	<div class="container">
+		<div class="faq__body">
+			<div class="faq__top">
+				<h4 class="faq__title wow animate__animated animate__fadeInUp">FAQ</h4>
+				<div class="faq__txt wow animate__animated animate__fadeInUp">If you still have questions,
+					please open one of them </div>
+					<svg class="faq__svg-arr" width="276" height="69" viewBox="0 0 276 69" fill="none" xmlns="http://www.w3.org/2000/svg">
 			
-				<section class="pre-footer">
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M274.431 66.7927C276.523 64.6938 276.523 61.2907 274.431 59.1917L249.505 34.1835L274.431 9.1753C276.523 7.07633 276.523 3.67321 274.431 1.57424C272.339 -0.524738 268.947 -0.524737 266.855 1.57424L238.14 30.383C236.048 32.4819 236.048 35.8851 238.14 37.984L266.855 66.7927C268.947 68.8917 272.339 68.8917 274.431 66.7927Z" fill="#50A8D6" fill-opacity="0.05"/>
+	
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M235.002 66.7927C237.094 64.6938 237.094 61.2907 235.002 59.1917L210.076 34.1835L235.002 9.1753C237.094 7.07633 237.094 3.67321 235.002 1.57424C232.91 -0.524738 229.518 -0.524737 227.426 1.57424L198.712 30.383C196.62 32.4819 196.62 35.8851 198.712 37.984L227.426 66.7927C229.518 68.8917 232.91 68.8917 235.002 66.7927Z" fill="#50A8D6" fill-opacity="0.25"/>
+		
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M195.573 66.7927C197.665 64.6938 197.665 61.2907 195.573 59.1917L170.647 34.1835L195.573 9.1753C197.665 7.07633 197.665 3.67321 195.573 1.57424C193.481 -0.524738 190.089 -0.524737 187.997 1.57424L159.283 30.383C157.191 32.4819 157.191 35.8851 159.283 37.984L187.997 66.7927C190.089 68.8917 193.481 68.8917 195.573 66.7927Z" fill="#3FA0D2" fill-opacity="0.45"/>
+		
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M156.145 66.7927C158.237 64.6938 158.237 61.2907 156.145 59.1917L131.218 34.1835L156.145 9.1753C158.237 7.07633 158.237 3.67321 156.145 1.57424C154.053 -0.524738 150.661 -0.524737 148.569 1.57424L119.854 30.383C117.762 32.4819 117.762 35.8851 119.854 37.984L148.569 66.7927C150.661 68.8917 154.053 68.8917 156.145 66.7927Z" fill="#3FA0D2" fill-opacity="0.65"/>
+				
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M116.717 66.7927C118.809 64.6938 118.809 61.2907 116.717 59.1917L91.7907 34.1835L116.717 9.1753C118.809 7.07633 118.809 3.67321 116.717 1.57424C114.625 -0.524738 111.233 -0.524737 109.141 1.57424L80.4265 30.383C78.3344 32.4819 78.3344 35.8851 80.4265 37.984L109.141 66.7927C111.233 68.8917 114.625 68.8917 116.717 66.7927Z" fill="url(#paint5_linear_405_3460)" fill-opacity="0.85"/>
+			
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M77.2882 66.7927C79.3803 64.6938 79.3803 61.2907 77.2882 59.1917L52.362 34.1835L77.2882 9.1753C79.3803 7.07633 79.3803 3.67321 77.2882 1.57424C75.1961 -0.524738 71.8042 -0.524737 69.7121 1.57424L40.9978 30.383C38.9057 32.4819 38.9057 35.8851 40.9978 37.984L69.7121 66.7927C71.8042 68.8917 75.1961 68.8917 77.2882 66.7927Z" fill="#48DCA6"/>
+				
+						<path fill-rule="evenodd" clip-rule="evenodd" d="M37.8595 66.7927C39.9516 64.6938 39.9516 61.2907 37.8595 59.1917L12.9333 34.1835L37.8595 9.1753C39.9516 7.07633 39.9516 3.67321 37.8595 1.57424C35.7674 -0.524738 32.3754 -0.524737 30.2833 1.57424L1.56907 30.383C-0.523027 32.4819 -0.523026 35.8851 1.56907 37.984L30.2833 66.7927C32.3754 68.8917 35.7674 68.8917 37.8595 66.7927Z" fill="url(#paint8_linear_405_3460)"/>
+						<defs>
+						<linearGradient id="paint0_linear_405_3460" x1="243.668" y1="57.1875" x2="269.218" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint1_linear_405_3460" x1="204.24" y1="57.1875" x2="229.789" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint2_linear_405_3460" x1="164.811" y1="57.1875" x2="190.361" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint3_linear_405_3460" x1="125.382" y1="57.1875" x2="150.932" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint4_linear_405_3460" x1="85.9534" y1="57.1875" x2="111.503" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint5_linear_405_3460" x1="79.4735" y1="49.2242" x2="118.286" y2="49.2242" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#48DCA6"/>
+						<stop offset="1" stop-color="#50A8D6"/>
+						</linearGradient>
+						<linearGradient id="paint6_linear_405_3460" x1="46.5247" y1="57.1875" x2="72.0744" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint7_linear_405_3460" x1="7.09698" y1="57.1875" x2="32.6467" y2="57.1249" gradientUnits="userSpaceOnUse">
+						<stop stop-color="white"/>
+						<stop offset="1" stop-color="white" stop-opacity="0"/>
+						</linearGradient>
+						<linearGradient id="paint8_linear_405_3460" x1="0.61607" y1="49.2242" x2="39.4286" y2="49.2242" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#48DCA6"/>
+						<stop offset="1" stop-color="#48DCA6"/>
+						</linearGradient>
+						</defs>
+					</svg>
+			</div>
+			<div class="faq__bottom wow animate__animated animate__fadeInUp">
+				<div class="faq__item ">
+					<div class="faq__item-top">
+						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						<h6 class="faq__item-title">What is Salesforce Implementation?</h6>
+					</div>
+					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
+						implementation of Salesforce Clouds, features and add-ons.
+					</p>
+
+				</div>
+				<div class="faq__item">
+					<div class="faq__item-top">
+						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						<h6 class="faq__item-title">How to Implement Salesforce?</h6>
+					</div>
+					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
+						implementation of Salesforce Clouds, features and add-ons.
+					</p>
+
+				</div>
+				<div class="faq__item">
+					<div class="faq__item-top">
+						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						<h6 class="faq__item-title">How long does it take to Implement Salesforce?
+						</h6>
+					</div>
+					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
+						implementation of Salesforce Clouds, features and add-ons.
+					</p>
+
+				</div>
+				<div class="faq__item">
+					<div class="faq__item-top">
+						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						<h6 class="faq__item-title">How much does a Salesforce Implementation cost?</h6>
+					</div>
+					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
+						implementation of Salesforce Clouds, features and add-ons.
+					</p>
+
+				</div>
+				<div class="faq__item">
+					<div class="faq__item-top">
+						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+								stroke-linejoin="round" />
+						</svg>
+						<h6 class="faq__item-title">How to become a Salesforce Implementation Partner?</h6>
+					</div>
+					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
+						implementation of Salesforce Clouds, features and add-ons.
+					</p>
+
+				</div>
+				<picture><source srcset="img/ola.webp" type="image/webp"><img class="faq__ban" src="img/ola.png" alt="ola"></picture>
+			</div>
+		</div>
+	</div>
+</section>
+				<section class="stories">
+	<div class="container">
+		<div class="stories__body">
+			<div class="stories__top">
+				<svg  class="stories__svg-arr" width="267" height="69" viewBox="0 0 267 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M-3.64299 5.37475L25.0713 34.1835L-3.643 62.9922" fill="url(#paint0_linear_405_3478)"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M-7.43079 66.7927C-9.52289 64.6938 -9.52289 61.2907 -7.43079 59.1917L17.4954 34.1835L-7.43079 9.1753C-9.52288 7.07633 -9.52288 3.67321 -7.43079 1.57424C-5.33869 -0.524736 -1.94674 -0.524736 0.145359 1.57424L28.8596 30.383C30.9517 32.4819 30.9517 35.8851 28.8596 37.984L0.145353 66.7927C-1.94674 68.8917 -5.3387 68.8917 -7.43079 66.7927Z" fill="#50A8D6" fill-opacity="0.05"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M31.9979 66.7927C29.9058 64.6938 29.9058 61.2907 31.9979 59.1917L56.9241 34.1835L31.9979 9.1753C29.9058 7.07633 29.9058 3.67321 31.9979 1.57424C34.09 -0.524736 37.482 -0.524736 39.5741 1.57424L68.2884 30.383C70.3804 32.4819 70.3804 35.8851 68.2884 37.984L39.5741 66.7927C37.482 68.8917 34.09 68.8917 31.9979 66.7927Z" fill="#50A8D6" fill-opacity="0.25"/>
+
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M71.4266 66.7927C69.3345 64.6938 69.3345 61.2907 71.4266 59.1917L96.3528 34.1835L71.4266 9.1753C69.3345 7.07633 69.3345 3.67321 71.4266 1.57424C73.5187 -0.524736 76.9107 -0.524736 79.0028 1.57424L107.717 30.383C109.809 32.4819 109.809 35.8851 107.717 37.984L79.0028 66.7927C76.9107 68.8917 73.5187 68.8917 71.4266 66.7927Z" fill="#3FA0D2" fill-opacity="0.45"/>
+		
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M110.855 66.7927C108.763 64.6938 108.763 61.2907 110.855 59.1917L135.782 34.1835L110.855 9.1753C108.763 7.07633 108.763 3.67321 110.855 1.57424C112.947 -0.524736 116.339 -0.524736 118.431 1.57424L147.146 30.383C149.238 32.4819 149.238 35.8851 147.146 37.984L118.431 66.7927C116.339 68.8917 112.947 68.8917 110.855 66.7927Z" fill="#3FA0D2" fill-opacity="0.65"/>
+
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M150.283 66.7927C148.191 64.6938 148.191 61.2907 150.283 59.1917L175.209 34.1835L150.283 9.1753C148.191 7.07633 148.191 3.67321 150.283 1.57424C152.375 -0.524736 155.767 -0.524736 157.859 1.57424L186.574 30.383C188.666 32.4819 188.666 35.8851 186.574 37.984L157.859 66.7927C155.767 68.8917 152.375 68.8917 150.283 66.7927Z" fill="url(#paint5_linear_405_3478)" fill-opacity="0.85"/>
+			
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M189.712 66.7927C187.62 64.6938 187.62 61.2907 189.712 59.1917L214.638 34.1835L189.712 9.1753C187.62 7.07633 187.62 3.67321 189.712 1.57424C191.804 -0.524736 195.196 -0.524736 197.288 1.57424L226.002 30.383C228.094 32.4819 228.094 35.8851 226.002 37.984L197.288 66.7927C195.196 68.8917 191.804 68.8917 189.712 66.7927Z" fill="#48DCA6"/>
+	
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M229.141 66.7927C227.048 64.6938 227.048 61.2907 229.141 59.1917L254.067 34.1835L229.141 9.1753C227.048 7.07633 227.048 3.67321 229.141 1.57424C231.233 -0.524736 234.625 -0.524736 236.717 1.57424L265.431 30.383C267.523 32.4819 267.523 35.8851 265.431 37.984L236.717 66.7927C234.625 68.8917 231.233 68.8917 229.141 66.7927Z" fill="url(#paint8_linear_405_3478)"/>
+					<defs>
+					<linearGradient id="paint0_linear_405_3478" x1="23.3317" y1="57.1874" x2="-2.21798" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint1_linear_405_3478" x1="62.7604" y1="57.1874" x2="37.2107" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint2_linear_405_3478" x1="102.189" y1="57.1874" x2="76.6394" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint3_linear_405_3478" x1="141.618" y1="57.1874" x2="116.068" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint4_linear_405_3478" x1="181.047" y1="57.1874" x2="155.497" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint5_linear_405_3478" x1="187.527" y1="49.2242" x2="148.714" y2="49.2242" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#48DCA6"/>
+					<stop offset="1" stop-color="#50A8D6"/>
+					</linearGradient>
+					<linearGradient id="paint6_linear_405_3478" x1="220.475" y1="57.1874" x2="194.926" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint7_linear_405_3478" x1="259.903" y1="57.1874" x2="234.353" y2="57.1249" gradientUnits="userSpaceOnUse">
+					<stop stop-color="white"/>
+					<stop offset="1" stop-color="white" stop-opacity="0"/>
+					</linearGradient>
+					<linearGradient id="paint8_linear_405_3478" x1="266.384" y1="49.2242" x2="227.571" y2="49.2242" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#48DCA6"/>
+					<stop offset="1" stop-color="#48DCA6"/>
+					</linearGradient>
+					</defs>
+					</svg>
+					
+				<h3 class="stories__title title wow animate__animated animate__fadeInUp">Our Success Stories</h3>
+			</div>
+			<div class="swiper stories__slider wow animate__animated animate__fadeInUp">
+				<div class="stories__slider-wrapper swiper-wrapper">
+					<div class="swiper-slide stories__slide-wrap">
+						<a class="stories__slide" href="/" style="background: url(img/stories1.jpg) no-repeat;">
+							<div class="stories__slide-top">
+								<span class="stories__span">Telecommunications</span><span class="stories__span">Vlocity</span>
+								<h6 class="stories__slide-title">Boost lead nutruring and engagement programs with Pardot implementation</h6>
+							</div>
+							<div class="stories__slide-bottom">
+								<p class="stories__slide-txt">
+									The client has a trial license of their product and came to Routine Automation with the request to implement a marketing automation solution...<span class="w-700">more</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide stories__slide-wrap">
+						<a class="stories__slide" href="/" style="background: url(img/stories1.jpg) no-repeat;">
+							<div class="stories__slide-top">
+								<span class="stories__span">Telecommunications</span><span class="stories__span">Vlocity</span>
+								<h6 class="stories__slide-title">Boost lead nutruring and engagement programs with Pardot implementation</h6>
+							</div>
+							<div class="stories__slide-bottom">
+								<p class="stories__slide-txt">
+									The client has a trial license of their product and came to Routine Automation with the request to implement a marketing automation solution...<span class="w-700">more</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide stories__slide-wrap">
+						<a class="stories__slide" href="/" style="background: url(img/stories1.jpg) no-repeat;">
+							<div class="stories__slide-top">
+								<span class="stories__span">Telecommunications</span><span class="stories__span">Vlocity</span>
+								<h6 class="stories__slide-title">Boost lead nutruring and engagement programs with Pardot implementation</h6>
+							</div>
+							<div class="stories__slide-bottom">
+								<p class="stories__slide-txt">
+									The client has a trial license of their product and came to Routine Automation with the request to implement a marketing automation solution...<span class="w-700">more</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="swiper-slide stories__slide-wrap">
+						<a class="stories__slide" href="/" style="background: url(img/stories1.jpg) no-repeat;">
+							<div class="stories__slide-top">
+								<span class="stories__span">Telecommunications</span><span class="stories__span">Vlocity</span>
+								<h6 class="stories__slide-title">Boost lead nutruring and engagement programs with Pardot implementation</h6>
+							</div>
+							<div class="stories__slide-bottom">
+								<p class="stories__slide-txt">
+									The client has a trial license of their product and came to Routine Automation with the request to implement a marketing automation solution...<span class="w-700">more</span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="stories__btns">
+					<a class="stories__btns-link" href="/">See all cases <img src="img/stories-link.svg" alt="arrow"></a>
+					<button class="stories__btn btn"><span>Get the consultation</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+			<section class="pre-footer">
 	<div class="container">
 		<div class="pre-footer__body wow animate__animated animate__fadeInUp">
 			<div class="pre-footer__top">
@@ -616,7 +1181,7 @@
 			</div>
 		</div>
 	</div>
-</section> 
+</section>
 		</main>
 		<footer class="footer">
 	<div class="container">
@@ -655,7 +1220,7 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20230409010631"></script>
+	<script src="js/app.min.js?_v=20230410013914"></script>
 </body>
 
 </html>
