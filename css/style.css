@@ -271,6 +271,33 @@ body {
           animation-delay: -0.2s;
 }
 
+.btn-hover::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -o-linear-gradient(359.87deg, #3CA0D2 0.12%, #48DCA6 99.91%);
+  background: linear-gradient(90.13deg, #3CA0D2 0.12%, #48DCA6 99.91%);
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.btn-hover span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn-hover {
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .header._active {
   background: #2F303A;
 }
@@ -7087,6 +7114,11 @@ input:checked + .switch-slider:before {
 }
 
 @media (any-hover: hover) {
+  .btn-hover:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+
   .header__btn:hover {
     background: white;
     color: #454545;

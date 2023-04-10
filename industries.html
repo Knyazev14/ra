@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230410013914" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230410013914">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230410143858" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230410143858">
 	<title>Industries</title>
 </head>
 
@@ -15,9 +15,48 @@
 			margin-bottom: 0;
 		}
 
+		.faq__title::before {
+			right: 3px;
+		}
+
+		@media(max-width:1440px) {
+			.choose::before {
+				background: url(../img/ben-bg1.svg) no-repeat !important;
+				width: 279px;
+				right: 0;
+				left: auto;
+				z-index: -1;
+			}
+		}
+
+		.choose::after {
+			content: '';
+			background: url(../img/ben-bg2.svg) no-repeat !important;
+			width: 279px;
+			left: 0;
+			position: absolute;
+			top: 240px;
+			background-size: contain !important;
+			height: 800px;
+			z-index: -1;
+		}
+
 		@media(min-width:768px) {
 			.main-banner {
 				margin-bottom: 50px;
+			}
+
+			.faq__txt {
+				max-width: 541px;
+			}
+
+			.faq__title::before {
+				left: 337px;
+			}
+
+			.faq__svg-arr {
+				top: 33px;
+
 			}
 		}
 
@@ -45,6 +84,23 @@
 		@media(min-width:1440px) {
 			.choose__slide-wrap {
 				height: 415px !important;
+			}
+
+			.choose::after {
+				display: none;
+			}
+
+			.faq__title::before {
+				left: 534px;
+			}
+
+			.faq__svg-arr {
+				right: -66px;
+				top: 0;
+			}
+
+			.faq__top {
+				margin-bottom: 100px;
 			}
 
 			.choose-key .choose__slide-wrap {
@@ -210,7 +266,7 @@
 						</svg>
 					</div>
 				</div>
-				<div class="industries-filter__btn">Call to Action</div>
+				<div class="industries-filter__btn btn-hover"><span>Call to Action</span></div>
 				<ul class="industries-filter__options">
 					<div class="industries-filter__wrap">
 						<li class="industries-filter__option">
@@ -537,6 +593,7 @@
 		</a>
 	</div>
 </div>
+
 			<section class="choose choose-key">
 				<div class="container">
 					<div class="choose__body wow animate__animated animate__fadeInUp">
@@ -686,9 +743,7 @@
 					</div>
 				</div>
 			</section>
-
-
-				<section class="reviews">
+			<section class="reviews">
 	<div class="reviews__container">
 		<div class="reviews__body wow animate__animated animate__zoomIn">
 			<div class="reviews__circle">
@@ -809,7 +864,7 @@
 
 
 
-				<div class="row">
+			<div class="row">
 
 		<div class="swiper row__slider wow animate__animated animate__fadeInUp">
 			<div class="swiper-wrapper">
@@ -846,151 +901,202 @@
 			</div>
 		</div>
 </div>
-				<section class="faq">
-	<div class="container">
-		<div class="faq__body">
-			<div class="faq__top">
-				<h4 class="faq__title wow animate__animated animate__fadeInUp">FAQ</h4>
-				<div class="faq__txt wow animate__animated animate__fadeInUp">If you still have questions,
-					please open one of them </div>
-					<svg class="faq__svg-arr" width="276" height="69" viewBox="0 0 276 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-			
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M274.431 66.7927C276.523 64.6938 276.523 61.2907 274.431 59.1917L249.505 34.1835L274.431 9.1753C276.523 7.07633 276.523 3.67321 274.431 1.57424C272.339 -0.524738 268.947 -0.524737 266.855 1.57424L238.14 30.383C236.048 32.4819 236.048 35.8851 238.14 37.984L266.855 66.7927C268.947 68.8917 272.339 68.8917 274.431 66.7927Z" fill="#50A8D6" fill-opacity="0.05"/>
-	
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M235.002 66.7927C237.094 64.6938 237.094 61.2907 235.002 59.1917L210.076 34.1835L235.002 9.1753C237.094 7.07633 237.094 3.67321 235.002 1.57424C232.91 -0.524738 229.518 -0.524737 227.426 1.57424L198.712 30.383C196.62 32.4819 196.62 35.8851 198.712 37.984L227.426 66.7927C229.518 68.8917 232.91 68.8917 235.002 66.7927Z" fill="#50A8D6" fill-opacity="0.25"/>
-		
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M195.573 66.7927C197.665 64.6938 197.665 61.2907 195.573 59.1917L170.647 34.1835L195.573 9.1753C197.665 7.07633 197.665 3.67321 195.573 1.57424C193.481 -0.524738 190.089 -0.524737 187.997 1.57424L159.283 30.383C157.191 32.4819 157.191 35.8851 159.283 37.984L187.997 66.7927C190.089 68.8917 193.481 68.8917 195.573 66.7927Z" fill="#3FA0D2" fill-opacity="0.45"/>
-		
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M156.145 66.7927C158.237 64.6938 158.237 61.2907 156.145 59.1917L131.218 34.1835L156.145 9.1753C158.237 7.07633 158.237 3.67321 156.145 1.57424C154.053 -0.524738 150.661 -0.524737 148.569 1.57424L119.854 30.383C117.762 32.4819 117.762 35.8851 119.854 37.984L148.569 66.7927C150.661 68.8917 154.053 68.8917 156.145 66.7927Z" fill="#3FA0D2" fill-opacity="0.65"/>
-				
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M116.717 66.7927C118.809 64.6938 118.809 61.2907 116.717 59.1917L91.7907 34.1835L116.717 9.1753C118.809 7.07633 118.809 3.67321 116.717 1.57424C114.625 -0.524738 111.233 -0.524737 109.141 1.57424L80.4265 30.383C78.3344 32.4819 78.3344 35.8851 80.4265 37.984L109.141 66.7927C111.233 68.8917 114.625 68.8917 116.717 66.7927Z" fill="url(#paint5_linear_405_3460)" fill-opacity="0.85"/>
-			
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M77.2882 66.7927C79.3803 64.6938 79.3803 61.2907 77.2882 59.1917L52.362 34.1835L77.2882 9.1753C79.3803 7.07633 79.3803 3.67321 77.2882 1.57424C75.1961 -0.524738 71.8042 -0.524737 69.7121 1.57424L40.9978 30.383C38.9057 32.4819 38.9057 35.8851 40.9978 37.984L69.7121 66.7927C71.8042 68.8917 75.1961 68.8917 77.2882 66.7927Z" fill="#48DCA6"/>
-				
-						<path fill-rule="evenodd" clip-rule="evenodd" d="M37.8595 66.7927C39.9516 64.6938 39.9516 61.2907 37.8595 59.1917L12.9333 34.1835L37.8595 9.1753C39.9516 7.07633 39.9516 3.67321 37.8595 1.57424C35.7674 -0.524738 32.3754 -0.524737 30.2833 1.57424L1.56907 30.383C-0.523027 32.4819 -0.523026 35.8851 1.56907 37.984L30.2833 66.7927C32.3754 68.8917 35.7674 68.8917 37.8595 66.7927Z" fill="url(#paint8_linear_405_3460)"/>
-						<defs>
-						<linearGradient id="paint0_linear_405_3460" x1="243.668" y1="57.1875" x2="269.218" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint1_linear_405_3460" x1="204.24" y1="57.1875" x2="229.789" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint2_linear_405_3460" x1="164.811" y1="57.1875" x2="190.361" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint3_linear_405_3460" x1="125.382" y1="57.1875" x2="150.932" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint4_linear_405_3460" x1="85.9534" y1="57.1875" x2="111.503" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint5_linear_405_3460" x1="79.4735" y1="49.2242" x2="118.286" y2="49.2242" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#48DCA6"/>
-						<stop offset="1" stop-color="#50A8D6"/>
-						</linearGradient>
-						<linearGradient id="paint6_linear_405_3460" x1="46.5247" y1="57.1875" x2="72.0744" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint7_linear_405_3460" x1="7.09698" y1="57.1875" x2="32.6467" y2="57.1249" gradientUnits="userSpaceOnUse">
-						<stop stop-color="white"/>
-						<stop offset="1" stop-color="white" stop-opacity="0"/>
-						</linearGradient>
-						<linearGradient id="paint8_linear_405_3460" x1="0.61607" y1="49.2242" x2="39.4286" y2="49.2242" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#48DCA6"/>
-						<stop offset="1" stop-color="#48DCA6"/>
-						</linearGradient>
-						</defs>
-					</svg>
-			</div>
-			<div class="faq__bottom wow animate__animated animate__fadeInUp">
-				<div class="faq__item ">
-					<div class="faq__item-top">
-						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<h6 class="faq__item-title">What is Salesforce Implementation?</h6>
-					</div>
-					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
-						implementation of Salesforce Clouds, features and add-ons.
-					</p>
+			<section class="faq">
+				<div class="container">
+					<div class="faq__body">
+						<div class="faq__top">
+							<h4 class="faq__title wow animate__animated animate__fadeInUp">Salesforce For<br>Industries FAQs
+							</h4>
+							<div class="faq__txt wow animate__animated animate__fadeInUp">If you still have questions, please
+								open one of them. We’ve got answers:</div>
+							<svg class="faq__svg-arr" width="276" height="69" viewBox="0 0 276 69" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
 
-				</div>
-				<div class="faq__item">
-					<div class="faq__item-top">
-						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<h6 class="faq__item-title">How to Implement Salesforce?</h6>
-					</div>
-					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
-						implementation of Salesforce Clouds, features and add-ons.
-					</p>
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M274.431 66.7927C276.523 64.6938 276.523 61.2907 274.431 59.1917L249.505 34.1835L274.431 9.1753C276.523 7.07633 276.523 3.67321 274.431 1.57424C272.339 -0.524738 268.947 -0.524737 266.855 1.57424L238.14 30.383C236.048 32.4819 236.048 35.8851 238.14 37.984L266.855 66.7927C268.947 68.8917 272.339 68.8917 274.431 66.7927Z"
+									fill="#50A8D6" fill-opacity="0.05" />
 
-				</div>
-				<div class="faq__item">
-					<div class="faq__item-top">
-						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<h6 class="faq__item-title">How long does it take to Implement Salesforce?
-						</h6>
-					</div>
-					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
-						implementation of Salesforce Clouds, features and add-ons.
-					</p>
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M235.002 66.7927C237.094 64.6938 237.094 61.2907 235.002 59.1917L210.076 34.1835L235.002 9.1753C237.094 7.07633 237.094 3.67321 235.002 1.57424C232.91 -0.524738 229.518 -0.524737 227.426 1.57424L198.712 30.383C196.62 32.4819 196.62 35.8851 198.712 37.984L227.426 66.7927C229.518 68.8917 232.91 68.8917 235.002 66.7927Z"
+									fill="#50A8D6" fill-opacity="0.25" />
 
-				</div>
-				<div class="faq__item">
-					<div class="faq__item-top">
-						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<h6 class="faq__item-title">How much does a Salesforce Implementation cost?</h6>
-					</div>
-					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
-						implementation of Salesforce Clouds, features and add-ons.
-					</p>
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M195.573 66.7927C197.665 64.6938 197.665 61.2907 195.573 59.1917L170.647 34.1835L195.573 9.1753C197.665 7.07633 197.665 3.67321 195.573 1.57424C193.481 -0.524738 190.089 -0.524737 187.997 1.57424L159.283 30.383C157.191 32.4819 157.191 35.8851 159.283 37.984L187.997 66.7927C190.089 68.8917 193.481 68.8917 195.573 66.7927Z"
+									fill="#3FA0D2" fill-opacity="0.45" />
 
-				</div>
-				<div class="faq__item">
-					<div class="faq__item-top">
-						<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-							<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
-								stroke-linejoin="round" />
-						</svg>
-						<h6 class="faq__item-title">How to become a Salesforce Implementation Partner?</h6>
-					</div>
-					<p class="faq__item-txt">To implement Salesforce, you need a Salesforce Partner who can provide a qualitative
-						implementation of Salesforce Clouds, features and add-ons.
-					</p>
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M156.145 66.7927C158.237 64.6938 158.237 61.2907 156.145 59.1917L131.218 34.1835L156.145 9.1753C158.237 7.07633 158.237 3.67321 156.145 1.57424C154.053 -0.524738 150.661 -0.524737 148.569 1.57424L119.854 30.383C117.762 32.4819 117.762 35.8851 119.854 37.984L148.569 66.7927C150.661 68.8917 154.053 68.8917 156.145 66.7927Z"
+									fill="#3FA0D2" fill-opacity="0.65" />
 
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M116.717 66.7927C118.809 64.6938 118.809 61.2907 116.717 59.1917L91.7907 34.1835L116.717 9.1753C118.809 7.07633 118.809 3.67321 116.717 1.57424C114.625 -0.524738 111.233 -0.524737 109.141 1.57424L80.4265 30.383C78.3344 32.4819 78.3344 35.8851 80.4265 37.984L109.141 66.7927C111.233 68.8917 114.625 68.8917 116.717 66.7927Z"
+									fill="url(#paint5_linear_405_3460)" fill-opacity="0.85" />
+
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M77.2882 66.7927C79.3803 64.6938 79.3803 61.2907 77.2882 59.1917L52.362 34.1835L77.2882 9.1753C79.3803 7.07633 79.3803 3.67321 77.2882 1.57424C75.1961 -0.524738 71.8042 -0.524737 69.7121 1.57424L40.9978 30.383C38.9057 32.4819 38.9057 35.8851 40.9978 37.984L69.7121 66.7927C71.8042 68.8917 75.1961 68.8917 77.2882 66.7927Z"
+									fill="#48DCA6" />
+
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M37.8595 66.7927C39.9516 64.6938 39.9516 61.2907 37.8595 59.1917L12.9333 34.1835L37.8595 9.1753C39.9516 7.07633 39.9516 3.67321 37.8595 1.57424C35.7674 -0.524738 32.3754 -0.524737 30.2833 1.57424L1.56907 30.383C-0.523027 32.4819 -0.523026 35.8851 1.56907 37.984L30.2833 66.7927C32.3754 68.8917 35.7674 68.8917 37.8595 66.7927Z"
+									fill="url(#paint8_linear_405_3460)" />
+								<defs>
+									<linearGradient id="paint0_linear_405_3460" x1="243.668" y1="57.1875" x2="269.218" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint1_linear_405_3460" x1="204.24" y1="57.1875" x2="229.789" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint2_linear_405_3460" x1="164.811" y1="57.1875" x2="190.361" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint3_linear_405_3460" x1="125.382" y1="57.1875" x2="150.932" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint4_linear_405_3460" x1="85.9534" y1="57.1875" x2="111.503" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint5_linear_405_3460" x1="79.4735" y1="49.2242" x2="118.286" y2="49.2242"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#48DCA6" />
+										<stop offset="1" stop-color="#50A8D6" />
+									</linearGradient>
+									<linearGradient id="paint6_linear_405_3460" x1="46.5247" y1="57.1875" x2="72.0744" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint7_linear_405_3460" x1="7.09698" y1="57.1875" x2="32.6467" y2="57.1249"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="white" />
+										<stop offset="1" stop-color="white" stop-opacity="0" />
+									</linearGradient>
+									<linearGradient id="paint8_linear_405_3460" x1="0.61607" y1="49.2242" x2="39.4286" y2="49.2242"
+										gradientUnits="userSpaceOnUse">
+										<stop stop-color="#48DCA6" />
+										<stop offset="1" stop-color="#48DCA6" />
+									</linearGradient>
+								</defs>
+							</svg>
+						</div>
+						<div class="faq__bottom wow animate__animated animate__fadeInUp">
+							<div class="faq__item ">
+								<div class="faq__item-top">
+									<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<h6 class="faq__item-title">What is Salesforce?</h6>
+								</div>
+								<p class="faq__item-txt">A cloud-based Customer Relationship Management (CRM) platform that helps
+									businesses manage their sales, marketing, customer service, and other related operations in a single,
+									centralized location.   
+								</p>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top">
+									<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<h6 class="faq__item-title">Does Salesforce provide solutions for different industries?</h6>
+								</div>
+								<p class="faq__item-txt">Of course, Salesforce provides a variety of tools and features, including
+									automation, analytics, collaboration, and customization capabilities, that can be tailored to the
+									unique needs of businesses across various industries.
+								</p>
+
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top">
+									<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<h6 class="faq__item-title">How long does it take to implement Salesforce for a specific industry?
+									</h6>
+								</div>
+								<p class="faq__item-txt">Can vary significantly, depending on the size and complexity of the project.
+									The timeline can range from a mere 2-3 weeks to several years. To get a more precise timeline, you can
+									share the details of your project with our RA team, and they will provide you with an accurate
+									understanding of what to expect.
+								</p>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top">
+									<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<h6 class="faq__item-title">What’s the price of Salesforce implementation and customization?</h6>
+								</div>
+								<p class="faq__item-txt">The cost can vary based on several factors including the licenses selected,
+									project timeline, the level of customization required and the rates of the Salesforce partner. Contact
+									the RA team, to get a personalized estimation specified for your industry. 
+								</p>
+
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top">
+									<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<h6 class="faq__item-title">How to configure Salesforce?</h6>
+								</div>
+								<p class="faq__item-txt">It's important to work with a qualified Salesforce partner to assess your
+									business requirements and provide a detailed proposal that outlines the scope of the project,
+									timeline, and cost.
+								</p>
+							</div>
+							<div class="faq__item">
+								<div class="faq__item-top">
+									<svg class="faq__svg" width="25" height="23" viewBox="0 0 25 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path class="faq__svg-path" d="M13 7.36865V17.3687" stroke="#D1CB28" stroke-width="1.5"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M8 12.3687H18" stroke="#D1CB28" stroke-width="1.5" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									<h6 class="faq__item-title">What are the benefits of an outsource Salesforce Partner?</h6>
+								</div>
+								<p class="faq__item-txt">A reliable partner provides consulting and proficiency in both business needs
+									and industry-specific requirements, as well as technical expertise. This enables the partner to work
+									closely with the client on all aspects, from strategizing for the best business outcomes to creating a
+									successful solution from the ground up.
+								</p>
+							</div>
+							<picture><source srcset="img/ola.webp" type="image/webp"><img class="faq__ban" src="img/ola.png" alt="ola"></picture>
+						</div>
+					</div>
 				</div>
-				<picture><source srcset="img/ola.webp" type="image/webp"><img class="faq__ban" src="img/ola.png" alt="ola"></picture>
-			</div>
-		</div>
-	</div>
-</section>
-				<section class="stories">
+			</section>
+
+			<section class="stories">
 	<div class="container">
 		<div class="stories__body">
 			<div class="stories__top">
@@ -1220,7 +1326,7 @@
 	</div>
 </footer>
 	</div>
-	<script src="js/app.min.js?_v=20230410013914"></script>
+	<script src="js/app.min.js?_v=20230410143858"></script>
 </body>
 
 </html>
