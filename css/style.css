@@ -5245,6 +5245,26 @@ input:checked + .switch-slider:before {
   display: none;
 }
 
+.animate__fadeInDown.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.animate__fadeInDown.delay-2 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.animate__fadeInDown.delay-3 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.animate__fadeInDown.delay-4 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 748px;
