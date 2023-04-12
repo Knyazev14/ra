@@ -5237,7 +5237,6 @@ input:checked + .switch-slider:before {
 .industries-filter__wrap {
   width: 100%;
   height: 150px;
-  overflow-y: scroll;
 }
 
 .industries-filter__option {
