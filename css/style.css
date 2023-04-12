@@ -5001,7 +5001,6 @@ input:checked + .switch-slider:before {
 .industries-filter__wrap::-webkit-scrollbar-thumb {
   background: -webkit-gradient(linear, left top, right top, color-stop(11.18%, #48dca6), color-stop(80.32%, #3fa0d2));
   background: linear-gradient(90deg, #48dca6 11.18%, #3fa0d2 80.32%);
-  border-radius: 10px;
 }
 
 .industries-filter__option {
@@ -5099,9 +5098,9 @@ input:checked + .switch-slider:before {
 
 .industries-cards__item-arrow {
   position: absolute;
-  top: 15px;
+  top: -15px;
   left: auto;
-  right: 15px;
+  right: 0;
 }
 
 .industries-cards__center {
