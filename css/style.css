@@ -5837,9 +5837,6 @@ input:checked + .switch-slider:before {
   height: auto;
   max-height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 .content-item__top-before path {
@@ -8077,10 +8074,10 @@ input:checked + .switch-slider:before {
   }
 
   .content-top__item.active + .content-item__top-text {
-    max-height: 250px;
-    -webkit-transition: all 0.7s ease;
-    -o-transition: all 0.7s ease;
-    transition: all 0.7s ease;
+    max-height: 800px;
+    -webkit-transition: all 1.7s ease;
+    -o-transition: all 1.7s ease;
+    transition: all 1.7s ease;
   }
 
   .content-top__item.active .content-item__top-arrow {
@@ -8169,7 +8166,7 @@ input:checked + .switch-slider:before {
   }
 
   .content-item__top:hover + .content-item__top-text {
-    max-height: 250px;
+    max-height: 800px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
