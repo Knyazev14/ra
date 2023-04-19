@@ -8589,7 +8589,7 @@ input:checked + .switch-slider:before {
   }
 
   .content-item__top.active .content-item__top-arrow path {
-    fill: url(#paint2);
+    fill: url(#paint6);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
