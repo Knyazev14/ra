@@ -5852,7 +5852,7 @@ input:checked + .switch-slider:before {
   border-radius: 15px;
   padding: 40px 10px 40px 10px;
   width: 100%;
-  margin-bottom: -40%;
+  margin-bottom: -78%;
   max-width: 365px;
 }
 
@@ -5924,9 +5924,22 @@ input:checked + .switch-slider:before {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.single-center__bottom-items::before {
+  content: "";
+  position: absolute;
+  top: -90px;
+  left: -10px;
+  width: 360px;
+  background-size: cover;
+  background-position: center;
+  height: 390px;
+  background-image: url(../img/bg/circles.svg);
 }
 
 .single-center__bottom-item-img {
@@ -5985,6 +5998,23 @@ input:checked + .switch-slider:before {
   background-position: center;
 }
 
+.all::after {
+  content: "";
+  bottom: 50px;
+  -webkit-transform: translate(0, 97%);
+      -ms-transform: translate(0, 97%);
+          transform: translate(0, 97%);
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/bg/all-green.svg);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .all {
   background: #363636;
   border-radius: 41px;
@@ -5996,11 +6026,41 @@ input:checked + .switch-slider:before {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin-bottom: 250px;
+  margin-bottom: 500px;
 }
 
 .reviews .single-center__top-btn {
   display: none;
+}
+
+.reviews-item {
+  position: relative;
+}
+
+.reviews-item::before {
+  content: "";
+  top: -68px;
+  left: -65px;
+  width: 207px;
+  height: 403px;
+  z-index: 0;
+  background-image: url(../img/bg/left-green.svg);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reviews-item::after {
+  content: "";
+  top: 388px;
+  right: -65px;
+  width: 207px;
+  height: 403px;
+  z-index: 0;
+  background-image: url(../img/bg/right-green.svg);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 768px) {
@@ -6680,6 +6740,13 @@ input:checked + .switch-slider:before {
     margin-bottom: 65px;
   }
 
+  .single-center__bottom-items::before {
+    width: 650px;
+    top: -140px;
+    height: 650px;
+    left: -30px;
+  }
+
   .single-center__bottom-item-img {
     width: 60px;
     height: 60px;
@@ -6689,6 +6756,9 @@ input:checked + .switch-slider:before {
     height: 160px;
     padding: 0 20px 15px 20px;
     margin-bottom: 50px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 47%;
+            flex: 0 0 47%;
   }
 
   .single-center__bottom-item-title {
@@ -6698,7 +6768,32 @@ input:checked + .switch-slider:before {
   }
 
   .all::before {
-    display: none;
+    height: auto;
+    background-position: top left;
+    min-height: 768px;
+    -webkit-transform: translate(0, -78%);
+        -ms-transform: translate(0, -78%);
+            transform: translate(0, -78%);
+  }
+
+  .all::after {
+    background-position: bottom left;
+  }
+
+  .reviews-item::before {
+    left: 0;
+    top: -169px;
+    width: 380px;
+    height: 790px;
+    background-position: center;
+  }
+
+  .reviews-item::after {
+    right: 0;
+    top: 0;
+    width: 380px;
+    height: 790px;
+    background-position: center;
   }
 }
 
@@ -8379,19 +8474,28 @@ input:checked + .switch-slider:before {
     max-width: 530px;
   }
 
+  .single-center__bottom-items::before {
+    width: 685px;
+    top: -188px;
+    height: 672px;
+    left: -95px;
+    background-size: cover;
+    background-position: center;
+  }
+
   .single-center__bottom-item {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 47%;
             flex: 0 0 47%;
+    border-radius: 15px;
   }
 
   .all::before {
-    height: auto;
-    background-position: top left;
-    min-height: 768px;
-    -webkit-transform: translate(0, -78%);
-        -ms-transform: translate(0, -78%);
-            transform: translate(0, -78%);
+    display: none;
+  }
+
+  .all::after {
+    display: none;
   }
 
   .all {
@@ -8400,6 +8504,10 @@ input:checked + .switch-slider:before {
 
   .reviews .single-center__top-btn {
     display: block;
+  }
+
+  .reviews-item::before {
+    top: 224px;
   }
 }
 
