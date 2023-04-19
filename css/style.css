@@ -8563,7 +8563,7 @@ input:checked + .switch-slider:before {
   }
 
   .content-item__top.active + .content-item__top-text {
-    max-height: 800px;
+    max-height: 700px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
