@@ -5789,6 +5789,7 @@ input:checked + .switch-slider:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  pointer-events: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -5809,10 +5810,12 @@ input:checked + .switch-slider:before {
 }
 
 .content-item__top-before {
+  pointer-events: none;
   margin-right: 12px;
 }
 
 .content-item__top-title {
+  pointer-events: none;
   font-family: Nunito;
   font-weight: 700;
   font-size: 24px;
@@ -5823,6 +5826,7 @@ input:checked + .switch-slider:before {
 }
 
 .content-item__top-arrow {
+  pointer-events: none;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -5840,9 +5844,11 @@ input:checked + .switch-slider:before {
   line-height: 26px;
   color: #a0a0a0;
   padding-left: 15px;
-  height: auto;
-  max-height: 0;
+  height: 0;
   overflow: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .single-center__bottom-body {
@@ -8368,7 +8374,12 @@ input:checked + .switch-slider:before {
     position: absolute;
     right: -700px;
     top: -15px;
+    height: auto;
     max-width: 625px;
+    max-height: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
 
   .content-top__item.active + .content-item__top-text {
@@ -8556,39 +8567,32 @@ input:checked + .switch-slider:before {
 }
 
 @media (max-width: 1440px) {
-  .content-item__top.active .content-item__top-arrow {
+  .content-top__item.active .content-item__top-arrow {
     -webkit-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
             transform: rotate(-90deg);
   }
 
-  .content-item__top.active + .content-item__top-text {
-    max-height: 700px;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-
-  .content-item__top.active::before {
+  .content-top__item.active .content-item__top::before {
     background: -o-linear-gradient(339.38deg, #3ca0d2 33.75%, #48dca6 67.45%);
     background: linear-gradient(110.62deg, #3ca0d2 33.75%, #48dca6 67.45%);
   }
 
-  .content-item__top.active .content-item__top-title {
+  .content-top__item.active .content-item__top-title {
     background: -o-linear-gradient(339.38deg, #3ca0d2 33.75%, #48dca6 67.45%);
     background: linear-gradient(110.62deg, #3ca0d2 33.75%, #48dca6 67.45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .content-item__top.active .content-item__top-before path {
+  .content-top__item.active .content-item__top-before path {
     stroke: url(#paint2);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
-  .content-item__top.active .content-item__top-arrow path {
+  .content-top__item.active .content-item__top-arrow path {
     fill: url(#paint6);
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
