@@ -5830,9 +5830,9 @@ input:checked + .switch-slider:before {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   width: 18px;
   height: 22px;
 }
@@ -5846,9 +5846,9 @@ input:checked + .switch-slider:before {
   padding-left: 15px;
   height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .single-center__bottom-body {
@@ -8384,9 +8384,9 @@ input:checked + .switch-slider:before {
 
   .content-top__item.active + .content-item__top-text {
     max-height: 800px;
-    -webkit-transition: all 1.7s ease;
-    -o-transition: all 1.7s ease;
-    transition: all 1.7s ease;
+    -webkit-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
   }
 
   .content-top__item.active .content-item__top-arrow {
@@ -8410,16 +8410,16 @@ input:checked + .switch-slider:before {
 
   .content-top__item.active .content-item__top-before path {
     stroke: url(#paint2);
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   .content-top__item.active .content-item__top-arrow path {
     fill: url(#paint3);
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   .single-center__bottom-body {
@@ -8587,16 +8587,16 @@ input:checked + .switch-slider:before {
 
   .content-top__item.active .content-item__top-before path {
     stroke: url(#paint2);
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 
   .content-top__item.active .content-item__top-arrow path {
     fill: url(#paint6);
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 }
 
