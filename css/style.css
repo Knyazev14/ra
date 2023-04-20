@@ -8580,7 +8580,7 @@ input:checked + .switch-slider:before {
 
   .content-top__item.active .content-item__top-text {
     height: auto;
-    padding: 0 0 15px 15px;
+    padding: 0 0 10px 15px;
   }
 
   .content-top__item.active .content-item__top::before {
