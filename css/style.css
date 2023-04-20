@@ -5844,13 +5844,14 @@ input:checked + .switch-slider:before {
   line-height: 26px;
   color: #a0a0a0;
   padding-left: 15px;
-  height: 0;
   opacity: 0;
-  scale: 0.8;
+  scale: 0;
+  height: 0;
   overflow: hidden;
-  -webkit-transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29) 0.1s;
-  -o-transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29) 0.1s;
-  transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29) 0.1s;
+  visibility: hidden;
+  -webkit-transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29);
+  -o-transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29);
+  transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29);
 }
 
 .single-center__bottom-body {
@@ -8577,32 +8578,9 @@ input:checked + .switch-slider:before {
   .content-top__item.active .content-item__top-text {
     scale: 1;
     opacity: 1;
-  }
-
-  .content-top__item.active .content-item__top::before {
-    background: -o-linear-gradient(339.38deg, #3ca0d2 33.75%, #48dca6 67.45%);
-    background: linear-gradient(110.62deg, #3ca0d2 33.75%, #48dca6 67.45%);
-  }
-
-  .content-top__item.active .content-item__top-title {
-    background: -o-linear-gradient(339.38deg, #3ca0d2 33.75%, #48dca6 67.45%);
-    background: linear-gradient(110.62deg, #3ca0d2 33.75%, #48dca6 67.45%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  .content-top__item.active .content-item__top-before path {
-    stroke: url(#paint2);
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-  }
-
-  .content-top__item.active .content-item__top-arrow path {
-    fill: url(#paint6);
-    -webkit-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    min-height: 200px;
+    visibility: visible;
+    height: auto;
   }
 }
 
