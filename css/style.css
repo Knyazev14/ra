@@ -8578,9 +8578,7 @@ input:checked + .switch-slider:before {
   .content-top__item.active .content-item__top-text {
     scale: 1;
     opacity: 1;
-    min-height: 200px;
     visibility: visible;
-    height: auto;
   }
 }
 
