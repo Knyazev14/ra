@@ -280,8 +280,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: -o-linear-gradient(359.87deg, #3CA0D2 0.12%, #48DCA6 99.91%);
-  background: linear-gradient(90.13deg, #3CA0D2 0.12%, #48DCA6 99.91%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(4.89%, #48DCA6), color-stop(95.57%, #3CA0D2));
+  background: -o-linear-gradient(left, #48DCA6 4.89%, #3CA0D2 95.57%);
+  background: linear-gradient(90deg, #48DCA6 4.89%, #3CA0D2 95.57%);
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -5844,12 +5845,12 @@ input:checked + .switch-slider:before {
   font-size: 18px;
   line-height: 26px;
   color: #a0a0a0;
+  height: 0;
   padding-left: 15px;
-  display: none;
   overflow: hidden;
-  -webkit-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .single-center__bottom-body {
@@ -8218,11 +8219,12 @@ input:checked + .switch-slider:before {
   }
 
   .ind-single {
-    max-height: 800px;
+    max-height: auto;
     -webkit-transform: translate(0, -94px);
         -ms-transform: translate(0, -94px);
             transform: translate(0, -94px);
     margin-bottom: 90px;
+    height: 100vh;
   }
 
   .ind-single__body {
@@ -8236,7 +8238,7 @@ input:checked + .switch-slider:before {
   .ind-single__img {
     width: 780px;
     height: 600px;
-    bottom: 60px;
+    bottom: 230px;
     right: 0;
   }
 
@@ -8280,10 +8282,10 @@ input:checked + .switch-slider:before {
     left: 0;
     width: 570px;
     height: 980px;
+    background-size: contain;
     z-index: 2;
     background-image: url(../img/bg/left-green.svg);
     position: absolute;
-    background-size: contain;
     background-repeat: no-repeat;
   }
 
@@ -8423,7 +8425,7 @@ input:checked + .switch-slider:before {
   }
 
   .single-center__bottom-body {
-    padding: 80px 125px 140px 125px;
+    padding: 79px 125px 80px 125px;
     max-width: 1200px;
   }
 
@@ -8519,6 +8521,9 @@ input:checked + .switch-slider:before {
 
   .reviews-item::before {
     top: 224px;
+    width: 570px;
+    height: 980px;
+    background-size: contain;
   }
 }
 
@@ -8574,7 +8579,8 @@ input:checked + .switch-slider:before {
   }
 
   .content-top__item.active .content-item__top-text {
-    display: block;
+    height: auto;
+    padding: 0 0 15px 15px;
   }
 
   .content-top__item.active .content-item__top::before {
