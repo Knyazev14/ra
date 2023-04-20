@@ -5783,7 +5783,6 @@ input:checked + .switch-slider:before {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
-  height: 50px;
   overflow: hidden;
 }
 
@@ -5846,9 +5845,7 @@ input:checked + .switch-slider:before {
   line-height: 26px;
   color: #a0a0a0;
   padding-left: 15px;
-  -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-          transform: scaleY(0);
+  display: none;
   overflow: hidden;
   -webkit-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -8378,6 +8375,7 @@ input:checked + .switch-slider:before {
   .content-item__top-text {
     position: absolute;
     right: -700px;
+    display: block;
     top: -15px;
     height: auto;
     max-width: 625px;
@@ -8576,13 +8574,7 @@ input:checked + .switch-slider:before {
   }
 
   .content-top__item.active .content-item__top-text {
-    -webkit-transform: scaleY(1);
-        -ms-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-
-  .content-top__item.active {
-    height: auto;
+    display: block;
   }
 
   .content-top__item.active .content-item__top::before {
