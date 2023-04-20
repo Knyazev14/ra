@@ -5783,6 +5783,11 @@ input:checked + .switch-slider:before {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   cursor: pointer;
+  -webkit-transition: height 1s ease-in-out;
+  -o-transition: height 1s ease-in-out;
+  transition: height 1s ease-in-out;
+  height: 50px;
+  overflow: hidden;
 }
 
 .content-item__top {
@@ -5844,14 +5849,13 @@ input:checked + .switch-slider:before {
   line-height: 26px;
   color: #a0a0a0;
   padding-left: 15px;
-  opacity: 0;
-  scale: 0;
-  height: 0;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
   overflow: hidden;
-  visibility: hidden;
-  -webkit-transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29);
-  -o-transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29);
-  transition: all 0.3s cubic-bezier(0.28, 0.27, 0.29, 0.29);
+  -webkit-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .single-center__bottom-body {
@@ -8380,8 +8384,6 @@ input:checked + .switch-slider:before {
     height: auto;
     max-width: 625px;
     max-height: 0;
-    opacity: 1;
-    scale: 1;
     -webkit-transition: none;
     -o-transition: none;
     transition: none;
@@ -8576,9 +8578,39 @@ input:checked + .switch-slider:before {
   }
 
   .content-top__item.active .content-item__top-text {
-    scale: 1;
-    opacity: 1;
-    visibility: visible;
+    -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+
+  .content-top__item.active {
+    height: auto;
+  }
+
+  .content-top__item.active .content-item__top::before {
+    background: -o-linear-gradient(339.38deg, #3ca0d2 33.75%, #48dca6 67.45%);
+    background: linear-gradient(110.62deg, #3ca0d2 33.75%, #48dca6 67.45%);
+  }
+
+  .content-top__item.active .content-item__top-title {
+    background: -o-linear-gradient(339.38deg, #3ca0d2 33.75%, #48dca6 67.45%);
+    background: linear-gradient(110.62deg, #3ca0d2 33.75%, #48dca6 67.45%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .content-top__item.active .content-item__top-before path {
+    stroke: url(#paint2);
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+
+  .content-top__item.active .content-item__top-arrow path {
+    fill: url(#paint6);
+    -webkit-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
   }
 }
 
