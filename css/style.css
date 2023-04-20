@@ -5779,10 +5779,10 @@ input:checked + .switch-slider:before {
 
 .content-item {
   margin-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
-  -webkit-transition: height 0.3s ease-out;
-  -o-transition: height 0.3s ease-out;
-  transition: height 0.3s ease-out;
   height: 50px;
   overflow: hidden;
 }
@@ -8357,6 +8357,7 @@ input:checked + .switch-slider:before {
 
   .content-item {
     max-width: 392px;
+    height: auto;
   }
 
   .content-item__top {
@@ -8578,6 +8579,10 @@ input:checked + .switch-slider:before {
     -webkit-transform: scaleY(1);
         -ms-transform: scaleY(1);
             transform: scaleY(1);
+  }
+
+  .content-top__item.active {
+    height: auto;
   }
 
   .content-top__item.active .content-item__top::before {
