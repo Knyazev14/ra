@@ -5710,6 +5710,35 @@ input:checked + .switch-slider:before {
   position: relative;
 }
 
+.single-center__top::before {
+  content: "";
+  top: 150px;
+  left: 0;
+  width: 260px;
+  height: 400px;
+  background-size: contain;
+  z-index: 2;
+  background-image: url(../img/bg/white-left-bg.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.single-center__top::after {
+  content: "";
+  top: 250px;
+  -webkit-transform: rotate(190deg);
+      -ms-transform: rotate(190deg);
+          transform: rotate(190deg);
+  right: -100px;
+  width: 260px;
+  height: 400px;
+  background-size: contain;
+  z-index: 2;
+  background-image: url(../img/bg/white-left-bg.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
 .single-center__top-body {
   background: #ffffff;
   -webkit-box-shadow: 0px 4px 17px 7px rgba(255, 255, 255, 0.3);
@@ -6009,9 +6038,9 @@ input:checked + .switch-slider:before {
 .all::after {
   content: "";
   bottom: 50px;
-  -webkit-transform: translate(0, 97%);
-      -ms-transform: translate(0, 97%);
-          transform: translate(0, 97%);
+  -webkit-transform: translate(0, 100%);
+      -ms-transform: translate(0, 100%);
+          transform: translate(0, 100%);
   left: 0;
   z-index: -1;
   width: 100%;
@@ -6020,7 +6049,7 @@ input:checked + .switch-slider:before {
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top left;
+  background-position: center;
 }
 
 .all {
@@ -6695,6 +6724,14 @@ input:checked + .switch-slider:before {
     -webkit-transform: translate(130px, 20px) scale(2.1);
         -ms-transform: translate(130px, 20px) scale(2.1);
             transform: translate(130px, 20px) scale(2.1);
+  }
+
+  .single-center__top::before {
+    background-image: none;
+  }
+
+  .single-center__top::after {
+    background-image: none;
   }
 
   .single-center__top-body {
@@ -8308,6 +8345,9 @@ input:checked + .switch-slider:before {
 
   .single-center__top::after {
     content: "";
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
     top: -462px;
     right: 0;
     width: 583px;
