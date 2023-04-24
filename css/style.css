@@ -8347,6 +8347,7 @@ input:checked + .switch-slider:before {
   }
 
   .single-center__top::before {
+    display: none;
     content: "";
     top: -150px;
     left: 0;
@@ -8361,6 +8362,7 @@ input:checked + .switch-slider:before {
 
   .single-center__top::after {
     content: "";
+    display: none;
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
@@ -8579,7 +8581,16 @@ input:checked + .switch-slider:before {
   }
 
   .all::before {
-    display: none;
+    background: url(../img/bg/top-bg.svg) no-repeat;
+    width: 100%;
+    -webkit-transform: translate(0, -53%);
+        -ms-transform: translate(0, -53%);
+            transform: translate(0, -53%);
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
   }
 
   .all::after {
