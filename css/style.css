@@ -5639,6 +5639,12 @@ input:checked + .switch-slider:before {
   text-align: center;
 }
 
+.ind-single__img-container {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+}
+
 .ind-single__img {
   position: absolute;
   bottom: 20px;
@@ -8292,10 +8298,17 @@ input:checked + .switch-slider:before {
     max-width: 383px;
   }
 
+  .ind-single__img-container {
+    top: 50%;
+  }
+
   .ind-single__img {
-    width: 824px;
+    position: relative;
+    width: 743px;
     height: 680px;
-    bottom: 140px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     right: 0;
   }
 
