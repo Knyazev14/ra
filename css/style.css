@@ -5844,6 +5844,9 @@ input:checked + .switch-slider:before {
 }
 
 .content-item__top-before {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px;
   pointer-events: none;
   margin-right: 12px;
 }
@@ -5867,7 +5870,9 @@ input:checked + .switch-slider:before {
   -webkit-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  width: 18px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18px;
+          flex: 0 0 18px;
   height: 22px;
 }
 
@@ -5949,7 +5954,7 @@ input:checked + .switch-slider:before {
 .single-center__bottom-text::before {
   content: "";
   position: absolute;
-  bottom: -25px;
+  bottom: -35px;
   right: 0;
   width: 16px;
   height: 44px;
@@ -6830,7 +6835,7 @@ input:checked + .switch-slider:before {
   }
 
   .single-center__bottom-item-title {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 29px;
     padding-top: 40px;
   }
@@ -8292,6 +8297,11 @@ input:checked + .switch-slider:before {
 
   .ind-single__body {
     padding-bottom: 120px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 
   .ind-single__btn {
@@ -8318,7 +8328,7 @@ input:checked + .switch-slider:before {
   }
 
   .post-banner__title-txt {
-    max-width: 790px;
+    max-width: 990px;
     margin-bottom: 50px;
   }
 
@@ -8397,7 +8407,7 @@ input:checked + .switch-slider:before {
   }
 
   .single-center__top-title span {
-    max-width: 720px;
+    max-width: 832px;
   }
 
   .single-center__top-title span::before {
@@ -8448,7 +8458,9 @@ input:checked + .switch-slider:before {
 
   .content-item__top-arrow {
     opacity: 0;
-    width: 30px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30px;
+            flex: 0 0 30px;
   }
 
   .content-item__top-text {
@@ -8502,7 +8514,7 @@ input:checked + .switch-slider:before {
   }
 
   .single-center__bottom-body {
-    padding: 79px 125px 80px 125px;
+    padding: 79px 100px 80px 100px;
     max-width: 1200px;
   }
 
@@ -8525,7 +8537,7 @@ input:checked + .switch-slider:before {
   }
 
   .single-center__bottom-title span {
-    max-width: 846px;
+    max-width: 1000px;
   }
 
   .single-center__bottom-title span::before {
@@ -8598,7 +8610,7 @@ input:checked + .switch-slider:before {
   }
 
   .all {
-    margin-bottom: 450px;
+    margin-bottom: 550px;
   }
 
   .reviews .single-center__top-btn {
