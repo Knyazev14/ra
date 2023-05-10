@@ -451,7 +451,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  max-width: 190px;
+  max-width: 191px;
 }
 
 .menu__list > li {
