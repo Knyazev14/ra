@@ -361,8 +361,8 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   position: relative;
-  width: 165px;
   height: 51px;
+  width: 100%;
 }
 
 .header__btn::before {
@@ -461,6 +461,7 @@ body {
 
 .menu__sub-list {
   display: none;
+  padding-left: 8px;
 }
 
 .menu__sub-list-services {
@@ -517,7 +518,7 @@ body {
 
 .menu__list li.open li {
   margin-top: 0;
-  padding: 6px 0;
+  padding: 8px 0;
   border-bottom: 0.5px solid #DFDFDF;
 }
 
@@ -528,6 +529,8 @@ body {
 .menu__list li.open .menu__sub-list-link {
   color: #8F8C8C;
   font-weight: 300;
+  width: 100%;
+  display: inline-block;
 }
 
 .menu__list li.open .menu__list-link-arrow {
@@ -7024,6 +7027,7 @@ input:checked + .switch-slider:before {
   }
 
   .menu__sub-list {
+    padding-left: 0;
     display: block;
     position: absolute;
     top: 60px;
