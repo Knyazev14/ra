@@ -451,7 +451,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
-  max-width: 191px;
+  max-width: 310px;
 }
 
 .menu__list > li {
@@ -610,9 +610,9 @@ body {
           transform: translate(50%, 0);
   background: white;
   z-index: 20;
-  width: 65%;
+  width: 82%;
   max-width: 600px;
-  padding: 20px 10px 50px 20px;
+  padding: 26px 40px 26px 40px;
 }
 
 .menu__icon {
