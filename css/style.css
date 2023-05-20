@@ -6312,7 +6312,7 @@ input:checked + .switch-slider:before {
 }
 
 .no-webp .clouds-wrapper::before{
-  background-image: url("/img/clouds/parallax.png"); }
+  background-image: url(../img/clouds/parallax.png); }
 
 .clouds-wrapper::before {
   content: "";
@@ -6328,7 +6328,7 @@ input:checked + .switch-slider:before {
 }
 
 .no-webp .clouds-wrapper::after{
-  background-image: url("/img/clouds/parallax.png"); }
+  background-image: url(../img/clouds/parallax.png); }
 
 .clouds-wrapper::after {
   content: "";
@@ -9218,9 +9218,9 @@ input:checked + .switch-slider:before {
 
 .webp .stories__slide:hover{ background: url(../img/stories2.webp) no-repeat !important; }
 
-.webp .clouds-wrapper::before{ background-image: url(/img/clouds/parallax.webp); }
+.webp .clouds-wrapper::before{ background-image: url(../img/clouds/parallax.webp); }
 
-.webp .clouds-wrapper::after{ background-image: url(/img/clouds/parallax.webp); }
+.webp .clouds-wrapper::after{ background-image: url(../img/clouds/parallax.webp); }
 
 @media (min-width: 1440px){
 
