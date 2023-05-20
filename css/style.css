@@ -6195,10 +6195,11 @@ input:checked + .switch-slider:before {
   width: 100%;
   position: relative;
   height: 100vh;
+  margin-bottom: 50px;
   background: -o-linear-gradient(269.14deg, #10577a -1.03%, #197eb1 12.03%, #ffffff 87.25%);
   background: linear-gradient(180.86deg, #10577a -1.03%, #197eb1 12.03%, #ffffff 87.25%);
   margin-top: -84px;
-  padding-top: 94px;
+  padding-top: 84px;
 }
 
 .clouds-banner__img-left {
@@ -6284,27 +6285,31 @@ input:checked + .switch-slider:before {
 
 @-webkit-keyframes clouds {
   0% {
-    margin-top: 0px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 
   50% {
-    margin-top: 30px;
+    -webkit-transform: translate(0, -55%);
+            transform: translate(0, -55%);
   }
 }
 
 @keyframes clouds {
   0% {
-    margin-top: 0px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 
   50% {
-    margin-top: 30px;
+    -webkit-transform: translate(0, -55%);
+            transform: translate(0, -55%);
   }
 }
 
 .clouds-wrapper {
   z-index: 3;
-  margin-top: 250px;
+  margin-top: 0;
   position: relative;
   background-color: white;
   -webkit-transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
@@ -6325,6 +6330,7 @@ input:checked + .switch-slider:before {
   z-index: -1;
   pointer-events: none;
   background-size: cover;
+  display: none;
 }
 
 .no-webp .clouds-wrapper::after{
@@ -6341,6 +6347,7 @@ input:checked + .switch-slider:before {
   z-index: -1;
   pointer-events: none;
   background-size: cover;
+  display: none;
 }
 
 .slow-animation {
@@ -6348,6 +6355,37 @@ input:checked + .switch-slider:before {
           animation-duration: 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
+}
+
+.clouds-filter__title {
+  text-align: center;
+  margin: 0 auto 15px;
+  max-width: 526px;
+}
+
+.clouds-filter__title span {
+  position: relative;
+}
+
+.clouds-filter__title span::before {
+  content: "";
+  position: absolute;
+  left: -23px;
+  top: -30px;
+  width: 40px;
+  height: 40px;
+  background: url(../img/pre-footer.svg) no-repeat;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.clouds-filter__text {
+  font-size: 20px;
+  line-height: 29px;
+  text-align: center;
+  max-width: 340px;
+  margin: 0 auto 45px;
 }
 
 @media (min-width: 768px) {
@@ -7120,12 +7158,47 @@ input:checked + .switch-slider:before {
     background-position: center;
   }
 
+  .clouds-banner__img-left {
+    max-width: 600px;
+  }
+
+  .clouds-banner__img-right {
+    max-width: 400px;
+  }
+
+  .clouds-banner__img-dog {
+    top: 110px;
+    left: 60px;
+    max-width: 200px;
+  }
+
+  .clouds-banner__title {
+    font-size: 80px;
+    padding-top: 0;
+    line-height: 90px;
+    max-width: 410px;
+  }
+
   .clouds-banner__text {
     display: none;
   }
 
   .clouds-banner__text-desc {
     display: block;
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 604px;
+  }
+
+  .clouds-filter__title {
+    font-size: 53px;
+    line-height: 69px;
+  }
+
+  .clouds-filter__text {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 516px;
   }
 }
 
@@ -8923,6 +8996,7 @@ input:checked + .switch-slider:before {
   .clouds-banner {
     margin-top: -94px;
     padding-top: 94px;
+    margin-bottom: 0;
   }
 
   .clouds-banner__img-left {
@@ -8947,16 +9021,10 @@ input:checked + .switch-slider:before {
   }
 
   .clouds-banner__title {
-    padding-top: 0;
-    font-size: 80px;
-    line-height: 90px;
-    max-width: 410px;
     margin-bottom: 32px;
   }
 
-  .clouds-banner__text {
-    font-size: 24px;
-    line-height: 35px;
+  .clouds-banner__text-desc {
     max-width: 522px;
     margin-bottom: 50px;
   }
@@ -8965,7 +9033,13 @@ input:checked + .switch-slider:before {
     height: 60px;
   }
 
+  .clouds-wrapper {
+    margin-top: 250px;
+    padding-top: 100px;
+  }
+
   .clouds-wrapper::before {
+    display: block;
     height: 700px;
     background-size: auto;
     background-position: center left;
@@ -8973,10 +9047,31 @@ input:checked + .switch-slider:before {
   }
 
   .clouds-wrapper::after {
+    display: block;
     top: -350px;
     height: 700px;
     background-size: auto;
     background-position: center right;
+  }
+
+  .clouds-filter__title {
+    font-size: 80px;
+    line-height: 90px;
+    max-width: 700px;
+  }
+
+  .clouds-filter__title span::before {
+    width: 50px;
+    height: 60px;
+    background-size: cover;
+    left: -35px;
+    top: -35px;
+  }
+
+  .clouds-filter__text {
+    font-size: 33px;
+    line-height: 40px;
+    max-width: 600px;
   }
 }
 
