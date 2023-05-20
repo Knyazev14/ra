@@ -6210,6 +6210,7 @@ input:checked + .switch-slider:before {
   position: absolute;
   left: 0;
   top: 50%;
+  will-change: transform;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -6233,6 +6234,7 @@ input:checked + .switch-slider:before {
   position: absolute;
   right: 0;
   top: 5%;
+  will-change: transform;
   -webkit-animation: clouds 3s linear infinite;
           animation: clouds 3s linear infinite;
 }
