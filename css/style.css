@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-@import "../libs/fullpage.css";
-
 @font-face {
   font-family: Jost;
   font-display: swap;
@@ -468,6 +466,10 @@ body {
   right: 400px !important;
 }
 
+.menu__sub-list-clouds {
+  right: 325px !important;
+}
+
 .menu__sub-list-industries {
   right: auto !important;
   left: 0;
@@ -477,7 +479,7 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #454545;
-  font-weight: 500;
+  font-weight: 300;
   position: relative;
 }
 
@@ -584,7 +586,7 @@ body {
 
 .menu__sub-list-alllink {
   color: #363636 !important;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .menu__social {
@@ -2733,6 +2735,8 @@ input:checked + .switch-slider:before {
 
 .footer {
   background-size: cover;
+  position: relative;
+  z-index: 2;
   width: 100%;
 }
 
@@ -6183,6 +6187,169 @@ input:checked + .switch-slider:before {
   background-repeat: no-repeat;
 }
 
+.clouds-banner .container {
+  height: 100%;
+}
+
+.clouds-banner {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: -o-linear-gradient(269.14deg, #10577a -1.03%, #197eb1 12.03%, #ffffff 87.25%);
+  background: linear-gradient(180.86deg, #10577a -1.03%, #197eb1 12.03%, #ffffff 87.25%);
+  margin-top: -84px;
+  padding-top: 94px;
+}
+
+.clouds-banner__img-left {
+  max-width: 390px;
+}
+
+.clouds-banner__box-2 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  -webkit-animation: clouds 3s linear infinite;
+          animation: clouds 3s linear infinite;
+}
+
+.clouds-banner__img-right {
+  max-width: 250px;
+}
+
+.clouds-banner__img-dog {
+  position: absolute;
+  top: 48px;
+  left: 25px;
+  z-index: 2;
+  max-width: 170px;
+}
+
+.clouds-banner__box {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  -webkit-animation: clouds 3s linear infinite;
+          animation: clouds 3s linear infinite;
+}
+
+.clouds-banner__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.clouds-banner__title {
+  padding-top: 80px;
+  font-family: Nunito;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 48px;
+  margin-bottom: 10px;
+}
+
+.clouds-banner__text {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.clouds-banner__text-desc {
+  display: none;
+}
+
+.clouds-banner__btn {
+  background: -o-linear-gradient(359.87deg, #d1cb28 0.12%, #48dca6 99.91%);
+  background: linear-gradient(90.13deg, #d1cb28 0.12%, #48dca6 99.91%);
+  border-radius: 12.2251px;
+  max-width: 511px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@-webkit-keyframes clouds {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: 30px;
+  }
+}
+
+@keyframes clouds {
+  0% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: 30px;
+  }
+}
+
+.clouds-wrapper {
+  z-index: 3;
+  margin-top: 250px;
+  position: relative;
+  background-color: white;
+  -webkit-transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
+          transform: translate(0%, 0%) translate3d(0px, 0px, 0px);
+}
+
+.no-webp .clouds-wrapper::before{
+  background-image: url("/img/clouds/parallax.png"); }
+
+.clouds-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -350px;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-position: top;
+  z-index: -1;
+  pointer-events: none;
+  background-size: cover;
+}
+
+.no-webp .clouds-wrapper::after{
+  background-image: url("/img/clouds/parallax.png"); }
+
+.clouds-wrapper::after {
+  content: "";
+  position: absolute;
+  top: -350px;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  background-position: top;
+  z-index: -1;
+  pointer-events: none;
+  background-size: cover;
+}
+
+.slow-animation {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 748px;
@@ -6951,6 +7118,14 @@ input:checked + .switch-slider:before {
     width: 380px;
     height: 790px;
     background-position: center;
+  }
+
+  .clouds-banner__text {
+    display: none;
+  }
+
+  .clouds-banner__text-desc {
+    display: block;
   }
 }
 
@@ -8744,6 +8919,63 @@ input:checked + .switch-slider:before {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .clouds-banner {
+    margin-top: -94px;
+    padding-top: 94px;
+  }
+
+  .clouds-banner__img-left {
+    max-width: 100%;
+  }
+
+  .clouds-banner__img-right {
+    max-width: 100%;
+  }
+
+  .clouds-banner__img-dog {
+    max-width: 310px;
+    top: 190px;
+    left: 90px;
+  }
+
+  .clouds-banner__box {
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+
+  .clouds-banner__title {
+    padding-top: 0;
+    font-size: 80px;
+    line-height: 90px;
+    max-width: 410px;
+    margin-bottom: 32px;
+  }
+
+  .clouds-banner__text {
+    font-size: 24px;
+    line-height: 35px;
+    max-width: 522px;
+    margin-bottom: 50px;
+  }
+
+  .clouds-banner__btn {
+    height: 60px;
+  }
+
+  .clouds-wrapper::before {
+    height: 700px;
+    background-size: auto;
+    background-position: center left;
+  }
+
+  .clouds-wrapper::after {
+    height: 700px;
+    background-size: auto;
+    background-position: center right;
+  }
 }
 
 @media (any-hover: hover) and (min-width: 1440px) {
@@ -8985,6 +9217,10 @@ input:checked + .switch-slider:before {
 .webp .footer{ background: #454545 url(../img/footer.webp) no-repeat; }
 
 .webp .stories__slide:hover{ background: url(../img/stories2.webp) no-repeat !important; }
+
+.webp .clouds-wrapper::before{ background-image: url(/img/clouds/parallax.webp); }
+
+.webp .clouds-wrapper::after{ background-image: url(/img/clouds/parallax.webp); }
 
 @media (min-width: 1440px){
 

@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230520181230" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230520181230">
+	<title>Clouds</title>
+</head>
+
+<body>
+	<style>
+		.stories__btn {
+			background: linear-gradient(90deg, #D1CB28 4.89%, #48DCA6 95.57%);
+		}
+
+		.reviews__center {
+			position: relative;
+			z-index: 2;
+		}
+
+
+		.reviews__bottom {
+			justify-content: flex-start;
+		}
+
+		.reviews .swiper-button-next:after {
+			content: "";
+			background-image: url(img/rev-next.svg);
+			background-size: cover;
+			width: 38px;
+			height: 66px;
+		}
+
+		.reviews .swiper-button-prev:after {
+			content: "";
+			background-image: url(img/rew-prev.svg);
+			background-size: cover;
+			width: 38px;
+			height: 66px;
+		}
+
+		.reviews .swiper-pagination-bullet.swiper-pagination-bullet-active {
+			background: #D1CB28;
+			border: none;
+		}
+
+		.impl-serv__slider {
+			display: block;
+		}
+
+		.faq__txt {
+			max-width: 300px;
+
+		}
+
+		.reviews__circle {
+
+			background: transparent;
+
+		}
+
+		.reviews__circle::Before {
+
+			background: transparent;
+
+		}
+
+		@media(max-width:1440px) {
+			.impl__serv-main {
+				display: none;
+			}
+
+			.faq__title::before {
+				left: 330px;
+			}
+		}
+
+		.header .logo__img {
+			display: none;
+		}
+
+		.reviews__circle::before {
+			height: auto;
+		}
+
+		.logo__img.white {
+			display: block;
+		}
+
+		.header .salesforce__img2 path {
+			fill: white;
+		}
+
+		.header .menu__icon span,
+		.header .menu__icon::before,
+		.header .menu__icon::after {
+			background: white;
+		}
+
+		@media(any-hover: hover) {
+			.header__btn:hover {
+				background: #197EB1;
+				color: white;
+			}
+		}
+
+		.faq {
+			margin-top: -100px;
+		}
+
+		.circ-1 {
+			top: -230px;
+			left: -112px;
+		}
+
+		.circ-2 {
+			top: 29px;
+			left: -320px;
+		}
+
+		.circ-3 {
+			top: 248px;
+		}
+
+		.circ-4 {
+			top: 515px;
+			left: -355px;
+		}
+
+		.main-circle__btn {
+			left: 65px;
+		}
+
+		@media(min-width:768px) {
+			.faq__txt {
+				max-width: 490px;
+			}
+
+			.faq__svg-arr {
+				display: none;
+			}
+
+			.reviews__title {
+				margin-top: 104px;
+			}
+		}
+
+		@media(max-width:768px) {
+			.faq-impl .faq__title::before {
+				top: -10px;
+				right: -14px;
+			}
+
+			.reviews__title {
+
+				font-family: Nunito;
+				margin-top: 104px;
+
+			}
+
+			.row {
+				margin-top: 70px;
+				margin-bottom: 140px;
+			}
+
+			.steps2__list-txt {
+				font-size: 18px;
+				line-height: 25px;
+			}
+
+			.steps2__list-title {
+				margin-bottom: 12px;
+			}
+		}
+
+		.steps2__next {
+			top: 281px;
+		}
+
+		.steps2__prev {
+			top: 281px;
+		}
+
+		.steps2 .swiper-pagination {
+			top: 269px;
+		}
+
+		@media(min-width:1440px) {
+			.single-center__top-title span {
+				max-width: 737px;
+			}
+
+			.single-center__top-sub-title {
+				max-width: 1060px;
+			}
+
+			.reviews {
+				margin-top: 10px;
+			}
+
+			.reviews__title {
+				margin-top: 200px;
+			}
+
+			.choose__slide-wrap {
+				height: 445px !important;
+
+			}
+
+			.post-banner__arrow-left {
+				transform: translate(-220px, 40px) scale(2.1);
+			}
+
+			.post-banner__arrow-right {
+				transform: translate(220px, 40px) scale(2.1);
+			}
+
+			.row {
+				margin-bottom: 150px;
+			}
+
+			.reviews__circle {
+				height: 933px;
+			}
+
+			.faq__txt {
+				max-width: 533px;
+			}
+
+			.faq__top {
+				margin-bottom: 79px;
+			}
+
+			.main-circle__list-item {
+				width: 856px;
+			}
+
+			.steps .circ__content-right .circ__title::before {
+				right: -48px;
+			}
+
+			.menu__list-link {
+				font-weight: 500;
+				color: white;
+				position: relative;
+				font-size: 17px;
+			}
+
+			.impl-serv__slider {
+				display: none;
+			}
+
+			.impl__serv-main {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.impl__serv-main .choose__slide-wrap2 {
+				width: 575px !important;
+				height: 392px !important;
+				display: flex;
+				position: relative;
+				z-index: 2;
+				flex-direction: column;
+				justify-content: space-between;
+				box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+			}
+
+			.impl__serv-main .choose__slide-txt {
+				font-size: 22px;
+				line-height: 31px;
+			}
+
+			.impl__serv-main .choose__slide-title2 {
+				max-width: 454px;
+				font-size: 33px;
+				line-height: 45px;
+			}
+
+			.steps .circ__content-blocks {
+				justify-content: flex-start;
+			}
+
+			.choose__slide-title {
+				display: flex;
+				align-items: baseline;
+				min-height: auto;
+			}
+
+			.circ__content-left {
+				margin-right: 20px;
+			}
+
+			.circ__content::before {
+				display: block;
+				right: 224px;
+			}
+
+			.impl-serv__title {
+				max-width: 570px;
+			}
+
+			.faq__svg-arr {
+				right: -122px;
+				display: block;
+			}
+
+			.faq__title::before {
+				left: 527px;
+			}
+		}
+	</style>
+	<div class="wrapper">
+		<header class="header">
+	<div class="container header__container">
+		<div class="header__body">
+			<a class="logo" href="/">
+				<img class="logo__img" src="img/logo.svg" alt="logo">
+				<img class="logo__img white" src="img/logo2.svg" alt="logo">
+			</a>
+			<a class="salesforce" href="/">
+				<img class="salesforce__img" src="img/salesforce.svg" alt="salesforce">
+				<svg class="salesforce__img2" width="201" height="24" viewBox="0 0 201 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M10.3465 6.67749L9.16465 8.54488C8.20338 7.94605 7.23423 7.64664 6.2572 7.64664C5.62685 7.64664 5.13834 7.75695 4.79165 7.97757C4.44496 8.18243 4.27162 8.48184 4.27162 8.87581C4.27162 9.20673 4.35041 9.47463 4.508 9.67949C4.66558 9.86859 4.91772 10.0341 5.26441 10.1759C5.62686 10.3177 6.1784 10.4753 6.91906 10.6486C8.1167 10.9481 9.01494 11.3972 9.61377 11.996C10.2283 12.5791 10.5356 13.3512 10.5356 14.3125C10.5356 15.6047 10.0471 16.5975 9.0701 17.2909C8.09307 17.9842 6.89542 18.3309 5.47715 18.3309C3.66492 18.3309 2.1521 17.8661 0.938689 16.9363L2.21513 15.0925C2.7194 15.4077 3.2158 15.6441 3.70431 15.8017C4.20859 15.9593 4.75226 16.0381 5.33532 16.0381C6.01294 16.0381 6.53297 15.912 6.89542 15.6599C7.27362 15.4077 7.46273 15.0295 7.46273 14.5252C7.46273 14.1943 7.38393 13.9343 7.22635 13.7452C7.06876 13.5561 6.81662 13.3906 6.46994 13.2488C6.12325 13.107 5.58746 12.9494 4.86257 12.776C3.64916 12.4766 2.75092 12.0354 2.16786 11.4523C1.60055 10.8693 1.31689 10.0735 1.31689 9.06491C1.31689 7.91453 1.75813 7.0163 2.64061 6.3702C3.52309 5.70834 4.68922 5.37741 6.13901 5.37741C7.7779 5.37741 9.18041 5.81077 10.3465 6.67749ZM12.1888 14.5489C12.1888 12.9415 12.7561 11.8227 13.8907 11.1923C15.0411 10.562 16.6879 10.2468 18.831 10.2468C19.3511 10.2468 19.745 10.2547 20.0129 10.2704V9.65585C20.0129 8.33214 19.1698 7.67028 17.4837 7.67028C16.2703 7.67028 15.0805 7.98545 13.9144 8.61579L12.9216 6.65385C13.5834 6.25989 14.332 5.9526 15.1672 5.73198C16.0024 5.4956 16.8297 5.37741 17.6491 5.37741C19.5244 5.37741 20.8796 5.80289 21.7148 6.65385C22.55 7.48905 22.9677 8.77337 22.9677 10.5068V15.1871C22.9677 15.7859 23.0386 16.7236 23.1804 18H20.462C20.3517 17.3539 20.2808 16.889 20.2493 16.6054H20.1784C19.7371 17.1884 19.2092 17.6218 18.5947 17.9054C17.9801 18.1891 17.1685 18.3309 16.16 18.3309C15.0253 18.3309 14.0798 18.0079 13.3234 17.3618C12.567 16.6999 12.1888 15.7623 12.1888 14.5489ZM20.0366 13.2488V12.256L19.1383 12.2324C17.7516 12.2324 16.7588 12.3978 16.16 12.7288C15.5611 13.0439 15.2617 13.5797 15.2617 14.3361C15.2617 14.8719 15.4193 15.2895 15.7345 15.5889C16.0497 15.8726 16.4751 16.0144 17.0109 16.0144C17.594 16.0144 18.114 15.8884 18.571 15.6362C19.028 15.3683 19.3826 15.0295 19.6347 14.6198C19.9026 14.1943 20.0366 13.7373 20.0366 13.2488ZM29.5469 1.26443V18H26.5922V1.26443H29.5469ZM43.995 12.9415H35.4381C35.5641 13.9185 35.9108 14.6749 36.4781 15.2107C37.0612 15.7308 37.857 15.9908 38.8656 15.9908C39.5589 15.9908 40.1656 15.9041 40.6857 15.7308C41.2215 15.5417 41.7888 15.258 42.3876 14.8798L43.664 16.7708C42.9549 17.2909 42.1906 17.6848 41.3712 17.9527C40.5675 18.2049 39.6692 18.3309 38.6765 18.3309C37.3843 18.3309 36.2733 18.063 35.3435 17.5272C34.4138 16.9915 33.6968 16.235 33.1925 15.258C32.704 14.281 32.4597 13.1464 32.4597 11.8542C32.4597 9.90011 32.9719 8.33214 33.9962 7.15024C35.0362 5.96835 36.5018 5.37741 38.3928 5.37741C40.2523 5.37741 41.6627 5.96047 42.624 7.12661C43.5852 8.29274 44.0659 9.86071 44.0659 11.8305C44.0659 12.2087 44.0422 12.5791 43.995 12.9415ZM41.1584 10.7196C41.1269 9.80556 40.8748 9.05703 40.402 8.47396C39.945 7.8909 39.2674 7.59936 38.3692 7.59936C37.4552 7.59936 36.746 7.89878 36.2418 8.4976C35.7532 9.08067 35.4775 9.82132 35.4144 10.7196H41.1584ZM55.0599 6.67749L53.878 8.54488C52.9167 7.94605 51.9475 7.64664 50.9705 7.64664C50.3402 7.64664 49.8517 7.75695 49.505 7.97757C49.1583 8.18243 48.9849 8.48184 48.9849 8.87581C48.9849 9.20673 49.0637 9.47463 49.2213 9.67949C49.3789 9.86859 49.631 10.0341 49.9777 10.1759C50.3402 10.3177 50.8917 10.4753 51.6324 10.6486C52.83 10.9481 53.7283 11.3972 54.3271 11.996C54.9417 12.5791 55.249 13.3512 55.249 14.3125C55.249 15.6047 54.7604 16.5975 53.7834 17.2909C52.8064 17.9842 51.6087 18.3309 50.1905 18.3309C48.3782 18.3309 46.8654 17.8661 45.652 16.9363L46.9284 15.0925C47.4327 15.4077 47.9291 15.6441 48.4176 15.8017C48.9219 15.9593 49.4656 16.0381 50.0486 16.0381C50.7263 16.0381 51.2463 15.912 51.6087 15.6599C51.9869 15.4077 52.176 15.0295 52.176 14.5252C52.176 14.1943 52.0973 13.9343 51.9397 13.7452C51.7821 13.5561 51.5299 13.3906 51.1833 13.2488C50.8366 13.107 50.3008 12.9494 49.5759 12.776C48.3625 12.4766 47.4642 12.0354 46.8812 11.4523C46.3139 10.8693 46.0302 10.0735 46.0302 9.06491C46.0302 7.91453 46.4715 7.0163 47.3539 6.3702C48.2364 5.70834 49.4025 5.37741 50.8523 5.37741C52.4912 5.37741 53.8937 5.81077 55.0599 6.67749ZM65.3881 1.33534L64.679 3.43911C64.3008 3.3288 63.8674 3.27364 63.3789 3.27364C62.0079 3.27364 61.3224 3.9355 61.3224 5.25922V5.82653H64.2298V8.07212H61.3224V18H58.3677V8.07212H56.3585V6.1811L58.3677 5.82653V5.16467C58.3677 3.84095 58.738 2.80877 59.4786 2.06812C60.2351 1.32746 61.3854 0.949259 62.9298 0.9335C63.8122 0.9335 64.6317 1.06745 65.3881 1.33534ZM78.2807 11.8069C78.2807 13.0833 78.0207 14.218 77.5006 15.2107C76.9964 16.1878 76.2557 16.9521 75.2787 17.5036C74.3174 18.0552 73.1828 18.3309 71.8748 18.3309C70.5669 18.3309 69.4323 18.0552 68.471 17.5036C67.5097 16.9363 66.7691 16.1641 66.249 15.1871C65.7448 14.1943 65.4926 13.0676 65.4926 11.8069C65.4926 10.5147 65.7448 9.38796 66.249 8.42669C66.7533 7.46542 67.4782 6.71689 68.4237 6.1811C69.385 5.6453 70.5354 5.37741 71.8748 5.37741C73.2143 5.37741 74.3647 5.6453 75.326 6.1811C76.2872 6.71689 77.02 7.46542 77.5243 8.42669C78.0285 9.38796 78.2807 10.5147 78.2807 11.8069ZM68.5655 11.8069C68.5655 13.0676 68.8256 14.084 69.3456 14.8562C69.8814 15.6126 70.7323 15.9908 71.8985 15.9908C73.0646 15.9908 73.9156 15.6126 74.4514 14.8562C74.9871 14.084 75.255 13.0676 75.255 11.8069C75.255 10.562 74.9871 9.57706 74.4514 8.85217C73.9156 8.11152 73.0567 7.74119 71.8748 7.74119C70.7087 7.74119 69.8656 8.11152 69.3456 8.85217C68.8256 9.57706 68.5655 10.562 68.5655 11.8069ZM81.1854 8.52124C81.1854 7.92241 81.1144 6.98478 80.9726 5.70834H83.8092C83.9195 6.3702 83.9825 6.9375 83.9983 7.41026H84.0455C84.7704 6.05503 85.9838 5.37741 87.6858 5.37741C87.9694 5.37741 88.2216 5.40893 88.4422 5.47196L88.324 8.02484C88.0876 7.97757 87.7882 7.95393 87.4257 7.95393C86.3857 7.95393 85.5741 8.29274 84.9911 8.97036C84.4237 9.64797 84.1401 10.5068 84.1401 11.5469V18H81.1854V8.52124ZM95.6028 5.37741C97.1471 5.37741 98.5181 5.81865 99.7157 6.70113L98.6048 8.75762C97.6593 8.14303 96.6665 7.83574 95.6264 7.83574C94.5075 7.83574 93.6723 8.19031 93.1208 8.89944C92.5692 9.60858 92.2935 10.5856 92.2935 11.8305C92.2935 13.0439 92.5692 14.021 93.1208 14.7616C93.6723 15.4865 94.4918 15.849 95.5791 15.849C96.5404 15.849 97.5568 15.5338 98.6284 14.9034L99.6921 17.0072C99.0775 17.4327 98.3999 17.7636 97.6593 18C96.9186 18.2206 96.1464 18.3309 95.3427 18.3309C93.8457 18.3309 92.648 18 91.7498 17.3381C90.8516 16.6763 90.2212 15.8568 89.8588 14.8798C89.4963 13.9028 89.3151 12.8864 89.3151 11.8305C89.3151 10.5226 89.5672 9.38796 90.0715 8.42669C90.5758 7.44966 91.3007 6.70113 92.2462 6.1811C93.1917 5.6453 94.3106 5.37741 95.6028 5.37741ZM112.646 12.9415H104.089C104.215 13.9185 104.562 14.6749 105.129 15.2107C105.712 15.7308 106.508 15.9908 107.517 15.9908C108.21 15.9908 108.817 15.9041 109.337 15.7308C109.873 15.5417 110.44 15.258 111.039 14.8798L112.315 16.7708C111.606 17.2909 110.842 17.6848 110.022 17.9527C109.219 18.2049 108.32 18.3309 107.328 18.3309C106.035 18.3309 104.924 18.063 103.995 17.5272C103.065 16.9915 102.348 16.235 101.844 15.258C101.355 14.281 101.111 13.1464 101.111 11.8542C101.111 9.90011 101.623 8.33214 102.647 7.15024C103.687 5.96835 105.153 5.37741 107.044 5.37741C108.904 5.37741 110.314 5.96047 111.275 7.12661C112.236 8.29274 112.717 9.86071 112.717 11.8305C112.717 12.2087 112.693 12.5791 112.646 12.9415ZM109.81 10.7196C109.778 9.80556 109.526 9.05703 109.053 8.47396C108.596 7.8909 107.919 7.59936 107.02 7.59936C106.106 7.59936 105.397 7.89878 104.893 8.4976C104.404 9.08067 104.129 9.82132 104.066 10.7196H109.81ZM133.398 11.9724C133.398 13.17 133.178 14.2495 132.736 15.2107C132.295 16.172 131.649 16.9363 130.798 17.5036C129.963 18.0552 128.978 18.3309 127.843 18.3309C126.315 18.3309 124.999 17.8345 123.896 16.8417V23.7676H121.887V8.66306C121.887 7.78059 121.831 6.88235 121.721 5.96835H123.636C123.715 6.48839 123.77 7.10297 123.801 7.8121H123.848C124.242 7.15024 124.794 6.62233 125.503 6.22837C126.212 5.83441 127.079 5.63743 128.103 5.63743C129.254 5.63743 130.223 5.92108 131.011 6.48839C131.799 7.03994 132.39 7.79634 132.784 8.75762C133.193 9.70313 133.398 10.7747 133.398 11.9724ZM131.318 11.9724C131.318 10.5226 130.995 9.3722 130.349 8.52124C129.719 7.67028 128.836 7.2448 127.701 7.2448C126.961 7.2448 126.299 7.41814 125.716 7.76483C125.133 8.11152 124.684 8.58427 124.368 9.1831C124.053 9.78192 123.896 10.4359 123.896 11.145V15.1398C124.447 15.6914 124.991 16.0932 125.527 16.3454C126.078 16.5975 126.709 16.7236 127.418 16.7236C128.678 16.7236 129.64 16.2902 130.302 15.4235C130.979 14.541 131.318 13.3906 131.318 11.9724ZM135.551 14.7143C135.551 13.1542 136.11 12.0748 137.229 11.476C138.364 10.8614 140.066 10.5541 142.335 10.5541C142.886 10.5541 143.304 10.562 143.588 10.5777V9.89223C143.588 8.99399 143.343 8.32426 142.855 7.88302C142.366 7.44178 141.618 7.22116 140.609 7.22116C139.333 7.22116 138.127 7.55997 136.993 8.23758L136.284 6.89023C137.639 6.05503 139.12 5.63743 140.728 5.63743C142.414 5.63743 143.643 6.03139 144.415 6.81932C145.203 7.60724 145.597 8.80489 145.597 10.4123V15.3289C145.597 16.1956 145.652 17.086 145.762 18H143.919C143.808 17.3066 143.753 16.763 143.753 16.369H143.682C143.241 17.0151 142.682 17.5036 142.004 17.8345C141.342 18.1655 140.483 18.3309 139.427 18.3309C138.261 18.3309 137.324 18.0236 136.615 17.4091C135.905 16.7787 135.551 15.8805 135.551 14.7143ZM143.588 13.5561V11.996L142.524 11.9724C141.342 11.9724 140.397 12.0512 139.687 12.2087C138.994 12.3663 138.474 12.6342 138.127 13.0124C137.796 13.3906 137.631 13.9185 137.631 14.5962C137.631 15.2895 137.836 15.8253 138.246 16.2035C138.655 16.566 139.223 16.7472 139.947 16.7472C140.704 16.7472 141.358 16.5896 141.909 16.2744C142.461 15.9435 142.879 15.5338 143.162 15.0453C143.446 14.5568 143.588 14.0604 143.588 13.5561ZM149.495 8.66306C149.495 7.78059 149.44 6.88235 149.329 5.96835H151.244C151.323 6.50414 151.378 7.14237 151.409 7.88302H151.457C152.15 6.38596 153.411 5.63743 155.239 5.63743C155.365 5.63743 155.593 5.66106 155.924 5.70834L155.806 7.4339C155.648 7.40238 155.404 7.38662 155.073 7.38662C153.923 7.38662 153.04 7.77271 152.426 8.54488C151.811 9.31704 151.504 10.3177 151.504 11.5469V18H149.495V8.66306ZM160.633 5.96835H163.824V7.50481H160.633V14.7616C160.633 16.0538 161.224 16.6999 162.405 16.6999C162.831 16.6999 163.225 16.6448 163.587 16.5345L163.895 18.0236C163.359 18.2285 162.736 18.3309 162.027 18.3309C160.971 18.3309 160.136 18.0394 159.522 17.4563C158.923 16.8575 158.623 16.0144 158.623 14.9271V7.50481H156.496V6.20473L158.6 5.96835V3.01363L160.633 2.30449V5.96835ZM166.623 8.66306C166.623 7.78059 166.568 6.88235 166.457 5.96835H168.372C168.451 6.39384 168.506 6.96114 168.538 7.67028H168.585C168.979 7.05569 169.53 6.56718 170.24 6.20473C170.949 5.82653 171.792 5.63743 172.769 5.63743C174.282 5.63743 175.4 6.07866 176.125 6.96114C176.866 7.82786 177.236 8.9152 177.236 10.2232V18H175.227V10.625C175.227 9.66373 174.991 8.8758 174.518 8.26122C174.045 7.63088 173.281 7.31571 172.225 7.31571C171.138 7.31571 170.263 7.67816 169.601 8.40305C168.955 9.11218 168.632 10.0104 168.632 11.0978V18H166.623V8.66306ZM191.26 12.7051H182.325C182.403 13.9343 182.774 14.9113 183.436 15.6362C184.097 16.3611 185.043 16.7236 186.272 16.7236C186.997 16.7236 187.643 16.629 188.21 16.4399C188.793 16.235 189.376 15.9356 189.96 15.5417L190.858 16.8417C190.18 17.3303 189.455 17.7006 188.683 17.9527C187.927 18.2049 187.084 18.3309 186.154 18.3309C184.31 18.3309 182.868 17.7479 181.828 16.5817C180.804 15.4156 180.292 13.8634 180.292 11.9251C180.292 10.6802 180.512 9.58494 180.954 8.63943C181.395 7.69391 182.033 6.96114 182.868 6.44111C183.719 5.90532 184.736 5.63743 185.917 5.63743C187.667 5.63743 188.998 6.20473 189.912 7.33935C190.842 8.47396 191.307 9.9789 191.307 11.8542C191.307 12.2324 191.291 12.516 191.26 12.7051ZM189.345 11.145C189.313 9.94739 189.006 8.98611 188.423 8.26122C187.84 7.53633 186.997 7.17388 185.894 7.17388C184.775 7.17388 183.908 7.55209 183.294 8.3085C182.679 9.04915 182.348 9.99466 182.301 11.145H189.345ZM194.508 8.66306C194.508 7.78059 194.453 6.88235 194.343 5.96835H196.257C196.336 6.50414 196.391 7.14237 196.423 7.88302H196.47C197.163 6.38596 198.424 5.63743 200.252 5.63743C200.378 5.63743 200.607 5.66106 200.938 5.70834L200.819 7.4339C200.662 7.40238 200.418 7.38662 200.087 7.38662C198.936 7.38662 198.054 7.77271 197.439 8.54488C196.825 9.31704 196.517 10.3177 196.517 11.5469V18H194.508V8.66306Z" fill="#454545"/>
+					</svg>
+					
+				<!-- <span class="salesforce__txt w-700">salesforce</span>
+				<span class="salesforce__txt">partner</span> -->
+			</a>
+			<button class="menu__icon">
+				<span></span>
+			</button>
+			<nav class="menu">
+				<ul class="menu__list">
+					<li>
+						<a class="menu__list-link" href="industries.html">Industries</a>
+						<svg class="menu__list-link-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.8789 8L6.72739 0.999999L1.00012 8" stroke="url(#link-arrow-grey)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							<defs>
+							<linearGradient id="link-arrow" x1="11.6584" y1="7.076" x2="5.95789" y2="2.0592" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#3CA0D2"/>
+							<stop offset="1" stop-color="#48DCA6"/>
+							</linearGradient>
+							<linearGradient id="link-arrow-grey" x1="11.6584" y1="7.076" x2="5.95789" y2="2.0592" gradientUnits="userSpaceOnUse">
+							<stop stop-color="#DFDFDF"/>
+							<stop offset="1" stop-color="#DFDFDF"/>
+							</linearGradient>
+							</defs>
+							</svg>				
+						<ul class="menu__sub-list menu__sub-list-industries">
+							<li>
+								<a class="menu__sub-list-link" href="industries-single.html">Automotive</a>
+							</li>
+								<li>
+								<a class="menu__sub-list-link" href="industries-manufacturing.html">Manufacturing</a>
+							</li>
+								<li>
+								<a class="menu__sub-list-link" href="industries-logistic.html">Logistics</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link" href="industries-retail.html">Retail</a>
+							</li>
+								<li>
+								<a class="menu__sub-list-link" href="industries-media.html">Media</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link" href="industries-energy.html">Energy & Utilities</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link menu__sub-list-alllink" href="industries.html">See all industries</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="menu__list-link" href="/">Services</a>
+						<svg class="menu__list-link-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.8789 8L6.72739 0.999999L1.00012 8" stroke="url(#link-arrow-grey)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>	
+						<ul class="menu__sub-list menu__sub-list-services">
+							<li>
+								<a class="menu__sub-list-link" href="implementation.html">Salesforce Implementation</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link" href="integration.html">Salesforce Integration</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link" href="data.html">Salesforce Data Migration</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link" href="audit.html">Salesforce Audit & QA</a>
+							</li>
+							<li>
+								<a class="menu__sub-list-link" href="appexchange.html">Salesforce AppExchange</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="menu__list-link" href="clouds.html">Clouds</a>
+						<svg class="menu__list-link-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.8789 8L6.72739 0.999999L1.00012 8" stroke="url(#link-arrow-grey)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>	
+					</li>
+					<li>
+						<a class="menu__list-link" href="/">Case Studies</a>
+					</li>
+					<li>
+						<a class="menu__list-link" href="/">Blog</a>
+					</li>
+					<li>
+						<a class="menu__list-link" href="/">
+							Company</a>
+							<svg class="menu__list-link-arrow" width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.8789 8L6.72739 0.999999L1.00012 8" stroke="url(#link-arrow-grey)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>	
+							<ul class="menu__sub-list">
+								<li>
+									<a class="menu__sub-list-link" href="/">How we work</a>
+								</li>
+								<li>
+									<a class="menu__sub-list-link" href="/">Career</a>
+								</li>
+							</ul>
+					</li>
+					<li>
+						<div class="menu__social">
+							<a href="/"><img class="menu__social-img" src="img/partner11.svg" alt="partner"></a>
+							<a href="/"><img class="menu__social-img" src="img/partner22.svg" alt="partner"></a>
+							<a href="/"><img class="menu__social-img" src="img/partner33.svg" alt="partner"></a>
+						</div>
+					</li>
+					<li>
+						<button class="header__btn btn">Get in Touch</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+		<main class="main">
+			<section class="clouds-banner">
+				<div class="clouds-banner__box-2">
+					<picture><source srcset="img/clouds/clouds-left.webp" type="image/webp"><img class="clouds-banner__img-left animate__animated animate__fadeInLeft" src="img/clouds/clouds-left.png" alt="clouds"></picture>
+				</div>
+				<div class="container">
+					<div class="clouds-banner__body animate__animated animate__fadeInUp">
+						<h1 class="clouds-banner__title">Salesforce Clouds</h1>
+						<p class="clouds-banner__text clouds-banner__text-desc">Routine Automation provides implementation, configuration, and customization of Salesforce Clouds. The RA team empowers best practices and deep expertise to achieve the result you want. Explore more about Salesforce Products for your CRM automation needs.</p>
+						<p class="clouds-banner__text">Routine Automation provides implementation, configuration, and customization of Salesforce Clouds.  Explore more about Salesforce Products for your CRM automation needs.</p>
+						<button class="clouds-banner__btn btn-hover"><span>See all Clouds</span></button>
+					</div>
+				</div>
+				<div class="clouds-banner__box">
+					<object class="clouds-banner__img-dog animate__animated animate__fadeInDownBig slow-animation" data="img/clouds/dog.svg" type="image/svg+xml"></object>
+					<picture><source srcset="img/clouds/clouds-right.webp" type="image/webp"><img class="clouds-banner__img-right animate__animated animate__fadeInRight" src="img/clouds/clouds-right.png" alt="clouds"></picture>
+				</div>
+				
+			</section>
+			<section class="clouds-wrapper">
+				<div class="container">
+					<section class="clouds-filter">
+						
+					</section>
+					<button class="industries-filter animate__animated animate__fadeInDown delay-3">
+						<div class="industries-filter__top">
+							<span class="industries-filter__txt">Choose your industry</span>
+							<div class="industries-filter__right">
+								<svg class="industries-filter__arr" width="26" height="16" viewBox="0 0 26 16" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.12109 0.917969L12.9988 15.1713L24.8766 0.917969" stroke="white" stroke-width="0.9013"
+										stroke-linecap="round" />
+								</svg>
+							</div>
+						</div>
+						<div class="industries-filter__btn btn-hover"><span>Call to Action</span></div>
+						<ul class="industries-filter__options">
+							<div class="industries-filter__wrap" data-simplebar>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck"  href="industries-single.html">
+										Automotive
+									</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-insurance.html">Insurance</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-manufacturing.html">Manufacturing</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-energy.html">Energy & Utilities</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-logistic.html">Logistics</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-telecom.html">Telecom-s</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-ecommerce.html">eCommerce</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-retail.html">Retail</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+								<li class="industries-filter__option">
+									<a class="industries-filter__link" target="__blanck" href="industries-travel.html">Travel & Hospitality</a>
+									<img class="industries-filter__option-arrow" src="img/option-arrow.svg" alt="arrow">
+								</li>
+							</div>
+						</ul>
+					</button>
+					<span class="industries-filter__bot  animate__animated animate__fadeInDown">or find the right one below</span>
+					<div class="clouds-content">
+						<div class="industries-cards animate__animated animate__fadeInUp delay-4">
+							<a class="industries-cards__item industries-card-1" target="__blanck" href="industries-single.html">
+								<div class="industries-cards__item-top">
+									<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center">
+										<img class="industries-cards__img" src="img/card-1.svg" alt="Automotive">
+									</div>
+									<h6 class="industries-cards__title">Automotive</h6>
+								</div>
+								<p class="industries-cards__text">To improve interactions between customers, partners, dealers, suppliers and car
+									manufacturers, attract more customers to showrooms, engage more prospects in marketing campaigns and address
+									customer challenges smarter...<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-2" target="__blanck" href="industries-insurance.html">
+								<div class="industries-cards__item-top">
+									<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-2.svg" alt="Insurance">
+									</div>
+									<h6 class="industries-cards__title">Insurance</h6>
+								</div>
+								<p class="industries-cards__text">To enhance claim management, boost partnerships, improve customer experience,
+									and accelerate and facilitate the insurance process for agents, customers and policyholders...<span
+										class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-3" target="__blanck" href="industries-manufacturing.html">
+								<div class="industries-cards__item-top"> <svg class="industries-cards__item-arrow" width="17" height="17"
+										viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-3.svg"
+											alt="Manufacturing">
+									</div>
+									<h6 class="industries-cards__title">Manufacturing</h6>
+								</div>
+								<p class="industries-cards__text">To monitor and analyse key performance indicators in real-time, allowing to make
+									data-driven decisions to optimize operations. Tools such as order tracking, case management, customer service
+									automation, supply chain management, inventory tracking, production scheduling, and quality control are
+									essential for businesses...<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-4" target="__blanck" href="industries-energy.html">
+								<div class="industries-cards__item-top">
+									<svg class="industries-cards__item-arrow" width="17" height="17" viewBox="0 0 17 17" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-4.svg"
+											alt="Energy & Utilities"></div>
+									<h6 class="industries-cards__title">Energy & Utilities</h6>
+								</div>
+								<p class="industries-cards__text">To collect and analyse data in real-time, facilitate better communication and coordination among teams and departments, while compliance tools can help companies stay in line with regulations and standards, rowing energy and utilities companies, in order to expand operations without worrying about IT infrastructure constraints...<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-5" target="__blanck" href="industries-logistic.html">
+								<div class="industries-cards__item-top"> <svg class="industries-cards__item-arrow" width="17" height="17"
+										viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-5.svg"
+											alt="Energy & Utilities"></div>
+									<h6 class="industries-cards__title">Logistics</h6>
+								</div>
+								<p class="industries-cards__text">To manage supply chains, meet logistics’ KPIs, deliver a better shipping experience and close more deals. The Routine Automation team provides services to implement and configure logistic-specific solutions by Salesforce to let your transportation business scale up faster, smarter and more effectively...<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-6" target="__blanck" href="industries-telecom.html">
+								<div class="industries-cards__item-top"> <svg class="industries-cards__item-arrow" width="17" height="17"
+										viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-6.svg"
+											alt="Energy & Utilities"></div>
+									<h6 class="industries-cards__title">Telecom-s</h6>
+								</div>
+								<p class="industries-cards__text">To improve audience engagement, accelerate content distribution, and optimize customer and partner interactions. Salesforce empowers telecom businesses to grow and succeed in a highly competitive market....<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-7" target="__blanck" href="industries-retail.html">
+								<div class="industries-cards__item-top"> <svg class="industries-cards__item-arrow" width="17" height="17"
+										viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-7.svg"
+											alt="Energy & Utilities"></div>
+									<h6 class="industries-cards__title">Retail</h6>
+								</div>
+								<p class="industries-cards__text">Provide a unified platform for managing customer data, inventory, and sales, allowing businesses to streamline their operations, increase sales, enhance marketing and boost customer experience whether you are a B2B or B2C eCommerce owner...<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-8" target="__blanck" href="industries-ecommerce.html">
+								<div class="industries-cards__item-top"> <svg class="industries-cards__item-arrow" width="17" height="17"
+										viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-8.svg"
+											alt="Energy & Utilities"></div>
+									<h6 class="industries-cards__title">eCommerce</h6>
+								</div>
+								<p class="industries-cards__text">Provide a unified platform for managing customer data, inventory, and sales, allowing businesses to streamline their operations, increase sales, enhance marketing and boost customer experience whether you are a B2B or B2C eCommerce owner...<span class="industries-cards__text-more">more</span></p>
+							</a>
+							<a class="industries-cards__item industries-card-9" target="__blanck" href="industries-travel.html">
+								<div class="industries-cards__item-top"> <svg class="industries-cards__item-arrow" width="17" height="17"
+										viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M0.362731 15.3627C0.0107769 15.7147 0.0107769 16.2853 0.362731 16.6373C0.714685 16.9892 1.28532 16.9892 1.63727 16.6373L0.362731 15.3627ZM16.9012 1C16.9012 0.502262 16.4977 0.0987654 16 0.0987654H7.88889C7.39115 0.0987654 6.98765 0.502262 6.98765 1C6.98765 1.49774 7.39115 1.90123 7.88889 1.90123H15.0988V9.11111C15.0988 9.60885 15.5023 10.0123 16 10.0123C16.4977 10.0123 16.9012 9.60885 16.9012 9.11111V1ZM1.63727 16.6373L16.6373 1.63727L15.3627 0.362731L0.362731 15.3627L1.63727 16.6373Z"
+											fill="url(#paint0_linear_1302_4730)" />
+										<defs>
+											<linearGradient id="paint0_linear_1302_4730" x1="2.63459" y1="14.5521" x2="3.89083" y2="15.599"
+												gradientUnits="userSpaceOnUse">
+												<stop stop-color="#3CA0D2" />
+												<stop offset="1" stop-color="#48DCA6" />
+											</linearGradient>
+										</defs>
+									</svg>
+									<div class="industries-cards__center"><img class="industries-cards__img" src="img/card-9.svg"
+											alt="Travel & Hospitality"></div>
+									<h6 class="industries-cards__title">Travel & Hospitality</h6>
+								</div>
+								<p class="industries-cards__text">To improve audience engagement, accelerate content distribution, and optimize customer and partner interactions. Salesforce empowers telecom businesses to grow and succeed in a highly competitive market....<span class="industries-cards__text-more">more</span></p>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+	<div class="container">
+		<div class="footer__body">
+			<div class="footer__top">
+				<div class="footer__item">
+					<img class="logo__img footer__logo" src="img/logo2.svg" alt="logo">
+					<p class="footer__txt">As a certified Salesforce Partner our aim is to help 
+						maximize your Salesforce platform usage. We 
+						implement business ideas and provide full cycle 
+						development.</p>
+				</div>
+				<div class="footer__item">
+					<div class="footer__item-title">Contact Us</div>
+					<div class="footer__contacts">
+						<a class="footer__mail" href="mailto:info@routine-automation.com">info@routine-automation.com</a>
+						<span class="footer__adress">Citadeles street 1A, Riga, LV-1010, Latvia</span>
+					</div>
+					<div class="footer__social">
+						<img class="footer__circle" src="img/facebook.svg" alt="facebook">
+						<img class="footer__circle" src="img/twiter.svg" alt="twiter">
+						<img class="footer__circle" src="img/linked.svg" alt="linked">
+					</div>
+				</div>
+				<div class="footer__item">
+					<div class="footer__item-title">Partners</div>
+					<a href="/"><img class="footer__img" src="img/partner1.svg" alt="partner"></a>
+					<a href="/"><picture><source srcset="img/partner2.webp" type="image/webp"><img class="footer__img" src="img/partner2.jpg" alt="partner"></picture></a>
+					<a href="/"><picture><source srcset="img/partner3.webp" type="image/webp"><img class="footer__img" src="img/partner3.jpg" alt="partner"></picture></a>
+				</div>
+			</div>
+			<div class="footer__pol">
+				© 2022 Routine Automation <a class="footer__pol-link" href="/">| Cookie Policy </a><a class="footer__pol-link" href="/">| Personal Data Policy</a>	
+			</div>
+		</div>
+	</div>
+</footer>
+
+	</div>
+	<script src="js/app.min.js?_v=20230520181230"></script>
+</body>
+
+</html>
