@@ -6462,11 +6462,18 @@ input:checked + .switch-slider:before {
   font-family: Nunito;
   font-weight: 700;
   font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #FFFFFF;
 }
 
 .clouds-wrapper .industries-cards {
   background: #197EB1;
+}
+
+.hidden-block {
+  opacity: 0;
 }
 
 @media (min-width: 768px) {
@@ -7435,6 +7442,10 @@ input:checked + .switch-slider:before {
   .menu__list li + li {
     margin-left: 30px;
     margin-top: 0;
+  }
+
+  .menu__list-link-arrow {
+    display: none;
   }
 
   .menu__social {
@@ -9496,6 +9507,10 @@ input:checked + .switch-slider:before {
     background: linear-gradient(90deg, #48dca6 0%, #3ca0d2 25.46%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .industries-cards__item-btn:hover {
+    background: #197EB1;
   }
 }
 
