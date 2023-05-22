@@ -9267,11 +9267,11 @@ input:checked + .switch-slider:before {
   }
 
   .clouds-banner__box {
-    -webkit-animation: clouds 4s linear infinite;
-            animation: clouds 4s linear infinite;
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
+    -webkit-animation: none;
+            animation: none;
     top: 50%;
   }
 
