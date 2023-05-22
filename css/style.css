@@ -6309,25 +6309,25 @@ input:checked + .switch-slider:before {
 
 @-webkit-keyframes clouds {
   0% {
-    -webkit-transform: translate3d(0, 0);
-            transform: translate3d(0, 0);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 
   50% {
-    -webkit-transform: translate3d(0, -5%);
-            transform: translate3d(0, -5%);
+    -webkit-transform: translate(0, -55%);
+            transform: translate(0, -55%);
   }
 }
 
 @keyframes clouds {
   0% {
-    -webkit-transform: translate3d(0, 0);
-            transform: translate3d(0, 0);
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
   }
 
   50% {
-    -webkit-transform: translate3d(0, -5%);
-            transform: translate3d(0, -5%);
+    -webkit-transform: translate(0, -55%);
+            transform: translate(0, -55%);
   }
 }
 
@@ -9267,12 +9267,12 @@ input:checked + .switch-slider:before {
   }
 
   .clouds-banner__box {
-    -webkit-animation: clouds 3s linear infinite;
-            animation: clouds 3s linear infinite;
-    top: 50%;
+    -webkit-animation: clouds 4s linear infinite;
+            animation: clouds 4s linear infinite;
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
+    top: 50%;
   }
 
   .clouds-banner__title {
