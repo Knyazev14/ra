@@ -6586,6 +6586,11 @@ input:checked + .switch-slider:before {
   z-index: 2;
 }
 
+.play {
+  -webkit-animation: clouds 4s linear infinite;
+          animation: clouds 4s linear infinite;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 748px;
@@ -9289,8 +9294,6 @@ input:checked + .switch-slider:before {
   }
 
   .clouds-banner__box {
-    -webkit-animation: clouds 4s linear infinite;
-            animation: clouds 4s linear infinite;
     -webkit-transform: translate(0, -50%);
         -ms-transform: translate(0, -50%);
             transform: translate(0, -50%);
