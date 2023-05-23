@@ -6356,26 +6356,6 @@ input:checked + .switch-slider:before {
   }
 }
 
-@-webkit-keyframes clouds3 {
-  0% {
-    margin-top: 0;
-  }
-
-  50% {
-    margin-top: 10px;
-  }
-}
-
-@keyframes clouds3 {
-  0% {
-    margin-top: 0;
-  }
-
-  50% {
-    margin-top: 10px;
-  }
-}
-
 .clouds-wrapper {
   z-index: 3;
   margin-top: 0;
