@@ -6247,8 +6247,6 @@ input:checked + .switch-slider:before {
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  -webkit-animation: clouds 3s linear infinite;
-          animation: clouds 3s linear infinite;
 }
 
 .clouds-banner__img-right {
