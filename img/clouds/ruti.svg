@@ -31,7 +31,7 @@
 	}
 
 	.svg-body .eyes{
-		animation: eyes 7s linear infinite;
+		<!-- animation: eyes 3s linear infinite; -->
 	}
 							</style>
 						</defs>
