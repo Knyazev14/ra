@@ -33,19 +33,19 @@
     },
     {
         "id": 4,
-        "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
+        "name": "Gary Freeman",
+        "company": "Project Delivery Manager, Salesforce Consultancy",
         "image": "img/main/role.svg",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "Routine Automation has adequately delivered the project to the client's expectations. The vendor ensures effective communication, daily calling and updating the client. The service provider's helpful attitude, responsiveness, and enthusiasm are hallmarks of their work."
     },
     {
         "id": 5,
         "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
+        "company": "CEO, Business Consulting Company",
         "image": "img/main/role.svg",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "The proactive team communicates effectively, works collaboratively, and is receptive to feedback. Their willingness to go beyond the scope and provide valuable insights stands out."
     },
     {
         "id": 6,
