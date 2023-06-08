@@ -6681,6 +6681,14 @@ input::placeholder {
   opacity: 0.5;
 }
 
+.hear__text-hidden {
+  display: none;
+}
+
+.hear__title-hidden {
+  display: none;
+}
+
 .hear__card-bottom {
   position: relative;
 }
@@ -6780,6 +6788,29 @@ input::placeholder {
   background: linear-gradient(117deg, #3CA0D2 -20%, #48DCA6 67.35%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.modal-overlay.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 768px) {
@@ -10049,7 +10080,7 @@ input::placeholder {
         -ms-flex: 0 0 376px;
             flex: 0 0 376px;
     margin-bottom: 26px;
-    max-height: 270px;
+    max-height: 280px;
     -webkit-transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
     transition: -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
     -o-transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -10085,7 +10116,7 @@ input::placeholder {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   .hear__card-img {
@@ -10093,6 +10124,20 @@ input::placeholder {
     height: 62px;
     border-radius: 50%;
     margin-right: 18px;
+  }
+
+  .hear__card-data {
+    min-height: 87px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .hear__card-name {
@@ -10574,6 +10619,63 @@ input::placeholder {
   .explore__item-text {
     font-size: 24px;
     line-height: 35px;
+  }
+
+  .modal-overlay .hear__card {
+    width: 1210px;
+    min-height: 735px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-bottom: 0;
+    border-radius: 50px;
+    padding: 85px;
+  }
+
+  .modal-overlay .hear__card-img {
+    width: 130px;
+    height: 130px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .modal-overlay .hear__card-name {
+    font-size: 31px;
+  }
+
+  .modal-overlay .hear__card-company {
+    font-size: 30px;
+    line-height: 44px;
+  }
+
+  .modal-overlay .hear__card-bottom {
+    font-size: 30px;
+    line-height: 43px;
+    max-width: 100%;
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+
+  .modal-overlay .hear__card-top {
+    margin-bottom: 30px;
+  }
+
+  .modal-overlay .hear__text-hidden {
+    display: block;
+    font-size: 29px;
+    line-height: 43px;
+  }
+
+  .modal-overlay .hear__card-bottom::before {
+    display: none;
+  }
+
+  .modal-overlay .hear__card-bottom::after {
+    display: none;
+  }
+
+  .modal-overlay .hear__btn {
+    margin-top: 50px;
   }
 }
 
