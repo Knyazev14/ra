@@ -3148,6 +3148,36 @@ input::placeholder {
   color: rgb(209, 203, 40);
 }
 
+.star-rating {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  width: 100px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.star-rating::before {
+  content: "★★★★★";
+  font-size: 24px;
+  color: #cccccc;
+}
+
+.star-rating::after {
+  content: "★★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  color: #FFB953;
+  overflow: hidden;
+  width: calc(var(--rating) / 5 * 100%);
+}
+
+.star-rating input[type=radio] {
+  display: none;
+}
+
 .faq {
   margin-bottom: 60px;
 }

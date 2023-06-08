@@ -1,108 +1,114 @@
 [
     {
         "id": 1,
-        "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role.svg",
+        "name": "Ivan Gammel",
+        "company": "CTO | DR Smile",
+        "image": "img/main/role-1.png",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
-    },
-    {
-        "id": 13,
-        "name": "Ash Makwana",
-        "company": "CEO & Founder, Trigerz.io",
-        "image": "img/main/role2.png",
-        "rating": 5,
-        "text": "They're true consultants that listen to requirements and provide productive feedback."
+        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success.",
+        "title": "They should keep doing what they’re doing.",
+        "fullText": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success. The client also praises their knowledgeable and skilled salesforce engineers."
     },
     {
         "id": 2,
-        "name": "Pavlo Voznenko",
-        "company": "CTO, InstaMotion Retail GmbH",
-        "image": "img/main/role3.png",
+        "name": "Ash Makwana",
+        "company": "CEO & Founder, Trigerz.io",
+        "image": "img/main/role-2.png",
         "rating": 5,
-        "text": "The developer is the best we’ve had.Routine Automation delivers high-quality work quickly. Their organized approach complemented their professional management style."
+        "text": "They're true consultants that listen to requirements and provide productive feedback.",
+        "title": "They're true consultants that listen to requirements and provide productive feedback.",
+        "fullText": "While it's too early to report on results, Routine Automation was efficient in documenting their information. They communicated well, providing additional support throughout the project."
     },
     {
         "id": 3,
-        "name": "Anonymous",
-        "company": "Partner, Salesforce Consulting Firm",
-        "image": "img/main/role.svg",
+        "name": "Pavlo Voznenko",
+        "company": "CTO, InstaMotion Retail GmbH",
+        "image": "img/main/role-3.png",
         "rating": 5,
-        "text": "The responsiveness of the project members was exceptional.The vendor impressed the client with their responsiveness and efficiency."
+        "text": "The developer is the best we’ve had.Routine Automation delivers high-quality work quickly. Their organized approach complemented their professional management style.",
+        "title": "The developer is the best we’ve had.",
+        "fullText": "Routine Automation delivers high-quality work quickly. Their organized approach complemented their professional management style. Their flexibility is also noteworthy. Customers can expect a new extension of their team when working with Routine Automation."
     },
     {
         "id": 4,
-        "name": "Gary Freeman",
-        "company": "Project Delivery Manager, Salesforce Consultancy",
-        "image": "img/main/role.svg",
+        "name": "Anonymous",
+        "company": "CEO, Business Consulting Company",
+        "image": "img/main/anon.svg",
         "rating": 5,
-        "text": "Routine Automation has adequately delivered the project to the client's expectations. The vendor ensures effective communication, daily calling and updating the client. The service provider's helpful attitude, responsiveness, and enthusiasm are hallmarks of their work."
+        "text": "The proactive team communicates effectively, works collaboratively, and is receptive to feedback. Their willingness to go beyond the scope and provide valuable insights stands out.",
+        "title": "They are proactive in their communication and provide regular updates and feedback.",
+        "fullText": "Routine Automation's work improved the solution's overall customer experience, exceeding the client's expectations. The proactive team communicates effectively, works collaboratively, and is receptive to feedback. Their willingness to go beyond the scope and provide valuable insights stands out."
     },
     {
         "id": 5,
         "name": "Anonymous",
-        "company": "CEO, Business Consulting Company",
-        "image": "img/main/role.svg",
+        "company": "Partner, Tondro Consulting",
+        "image": "img/main/role-4.png",
         "rating": 5,
-        "text": "The proactive team communicates effectively, works collaboratively, and is receptive to feedback. Their willingness to go beyond the scope and provide valuable insights stands out."
+        "text": "The responsiveness of the project members was exceptional.The vendor impressed the client with their responsiveness and efficiency.",
+        "title": "The responsiveness of the project members was exceptional.",
+        "fullText": "Routine Automation has delivered the outputs on time, though the client is still in the process of onboarding. The vendor impressed the client with their responsiveness and efficiency. They also kept in touch with the client through email, messaging apps, and virtual meetings."
     },
     {
         "id": 6,
-        "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role2.png",
-        "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "name": "Gary Freeman",
+        "company": "Project Delivery Manager, Coacto",
+        "image": "img/main/role-5.png",
+        "rating": 4.5,
+        "text": "Routine Automation has adequately delivered the project to the client's expectations. The vendor ensures effective communication, daily calling and updating the client. The service provider's helpful attitude, responsiveness, and enthusiasm are hallmarks of their work.",
+        "title": "They were super helpful and responsive to requests and always keen to help and assist.",
+        "fullText": "Routine Automation has adequately delivered the project to the client's expectations. The vendor ensures effective communication, daily calling and updating the client. The service provider's helpful attitude, responsiveness, and enthusiasm are hallmarks of their work."
     },
     {
         "id": 7,
         "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role3.png",
+        "company": "CEO, Payment Solutions Company",
+        "image": "img/main/anon.svg",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "Routine Automation has gone above and beyond to exceed the client's expectations. The team has worked hard to pass the Salesforce security reviews and thoroughly discuss the needed requirements. They've communicated well through regular meetings. Their solutions are impressive.",
+        "title": "They've always tried to make our requirements better.",
+        "fullText": "Routine Automation has gone above and beyond to exceed the client's expectations. The team has worked hard to pass the Salesforce security reviews and thoroughly discuss the needed requirements. They've communicated well through regular meetings. Their solutions are impressive."
     },
     {
         "id": 8,
-        "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role2.png",
+        "name": "Frederik Schwerdtfeger",
+        "company": "Product Manager Operations | Zizoo",
+        "image": "img/main/role-6.png",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "The engagement has successfully rolled out 90% of CRM operations. Routine Automation's development is streamlining communications, reducing response times, and increasing CSAT. The team understands company ideals and identifies client needs accurately to address issues that arise.",
+        "title": "We have a constant exchange of ideas and proposals to make our operations even more efficient.",
+        "fullText": "The engagement has successfully rolled out 90% of CRM operations. Routine Automation's development is streamlining communications, reducing response times, and increasing CSAT. The team understands company ideals and identifies client needs accurately to address issues that arise."
     },
     {
         "id": 9,
         "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role.svg",
+        "company": "Sales & Delivery Operations Manager | PolSource",
+        "image": "img/main/anon.svg",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "Routine Automation’s work pleases their client immensely. Their team’s quality is high caliber and on par with onshore development partners. When any potential issues arise, they’re addressed quickly and professionally.",
+        "title": "Their ability to communicate is admirable.",
+        "fullText": "Routine Automation’s work pleases their client immensely. Their team’s quality is high caliber and on par with onshore development partners. When any potential issues arise, they’re addressed quickly and professionally. Routine Automation offers seasoned resources to foster client success."
     },
     {
         "id": 10,
         "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role.svg",
+        "company": "Managing Director | Ignyto",
+        "image": "img/main/role-7.png",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "They are excellent and helpful.Routine Automation is a helpful partner who's still working on the project. They're using an agile methodology, fulfilling the requirements.  ",
+        "title": "They are excellent and helpful.",
+        "fullText": "Routine Automation is a helpful partner who's still working on the project. They're using an agile methodology, fulfilling the requirements. Overall, the team has secured an ongoing partnership because of their flexibility."
     },
     {
         "id": 11,
-        "name": "Anonymous",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role.svg",
+        "name": "David Kunze",
+        "company": "MD | Valuent",
+        "image": "img/main/role-8.png",
         "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
-    },
-    {
-        "id": 12,
-        "name": "Pavlo Voznenko",
-        "company": "Executive, Aligner Therapy Company",
-        "image": "img/main/role.svg",
-        "rating": 5,
-        "text": "Thanks to Routine Automation's work, the client's ROI is great — they've saved the team more than $112,000 this year. Their excellent communication and adaptability to the client's processes have been key to the project's success."
+        "text": "All consultants are very driven and excel at what they do. Routine Automation has delivered great work. They maintained excellent communication and great flexibility. They proved to be hard-working individuals who are results-driven and talented.",
+        "title": "All consultants are very driven and excel at what they do.",
+        "fullText": "Routine Automation has delivered great work. They maintained excellent communication and great flexibility. They proved to be hard-working individuals who are results-driven and talented. There aren't any areas for improvement to suggest."
     }
-  
+ 
 ]
 
