@@ -9632,7 +9632,7 @@ input::placeholder {
     background-size: contain;
     height: 80px;
     width: 364px;
-    background-image: url(/img/main/before-main.svg);
+    background-image: url(../img/main/before-main.svg);
     background-repeat: no-repeat;
   }
 
@@ -9644,7 +9644,7 @@ input::placeholder {
     background-size: contain;
     height: 81px;
     width: 267px;
-    background-image: url(/img/main/after-main.svg);
+    background-image: url(../img/main/after-main.svg);
     background-repeat: no-repeat;
   }
 
@@ -9696,7 +9696,7 @@ input::placeholder {
     position: absolute;
     top: -30px;
     left: -40px;
-    background-image: url(/img/main/brusg.svg);
+    background-image: url(../img/main/brusg.svg);
     width: 54px;
     height: 47px;
     background-size: contain;
@@ -9789,7 +9789,7 @@ input::placeholder {
     position: absolute;
     top: -20px;
     right: -45px;
-    background-image: url(/img/main/simple-br.svg);
+    background-image: url(../img/main/simple-br.svg);
     width: 48px;
     height: 46px;
     background-size: contain;
@@ -9801,7 +9801,7 @@ input::placeholder {
     position: absolute;
     top: -2px;
     right: -25px;
-    background-image: url(/img/main/simple-circle.svg);
+    background-image: url(../img/main/simple-circle.svg);
     width: 288px;
     height: 90px;
     background-size: contain;
@@ -9904,7 +9904,7 @@ input::placeholder {
     position: absolute;
     top: 60px;
     left: -40px;
-    background-image: url(/img/main/brusg.svg);
+    background-image: url(../img/main/brusg.svg);
     width: 54px;
     height: 47px;
     background-size: contain;
@@ -10021,7 +10021,7 @@ input::placeholder {
     content: "";
     top: -15px;
     left: -10px;
-    background-image: url(/img/main/top.svg);
+    background-image: url(../img/main/top.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 39px;
@@ -10034,7 +10034,7 @@ input::placeholder {
     content: "";
     bottom: 0;
     right: 0;
-    background-image: url(/img/main/bottom.svg);
+    background-image: url(../img/main/bottom.svg);
     background-repeat: no-repeat;
     background-size: contain;
     width: 39px;
@@ -10111,7 +10111,7 @@ input::placeholder {
     right: 18px;
     width: 288px;
     height: 90px;
-    background: url(/img/main/real-circle.svg);
+    background: url(../img/main/real-circle.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -10121,7 +10121,7 @@ input::placeholder {
     right: -30px;
     width: 40px;
     height: 75px;
-    background: url(/img/main/real-arrow.svg);
+    background: url(../img/main/real-arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -10168,9 +10168,7 @@ input::placeholder {
   }
 
   .result__item:hover .result__item-right {
-    -webkit-transform: scale(1);
-        -ms-transform: scale(1);
-            transform: scale(1);
+    opacity: 1;
   }
 
   .result__item:hover .result__item-title {
@@ -10220,9 +10218,9 @@ input::placeholder {
     display: -ms-flexbox;
     display: flex;
     position: relative;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+    -webkit-transition: height 0.3s ease;
+    -o-transition: height 0.3s ease;
+    transition: height 0.3s ease;
   }
 
   .result__item-left {
@@ -10239,12 +10237,10 @@ input::placeholder {
   .result__item-right {
     max-width: 480px;
     margin-left: auto;
-    -webkit-transform: scaleX(0);
-        -ms-transform: scaleX(0);
-            transform: scaleX(0);
-    -webkit-transition: all 0.3s ease 0.1s;
-    -o-transition: all 0.3s ease 0.1s;
-    transition: all 0.3s ease 0.1s;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s ease 0.1s;
+    -o-transition: opacity 0.2s ease 0.1s;
+    transition: opacity 0.2s ease 0.1s;
   }
 
   .result__item-text {
@@ -10321,7 +10317,7 @@ input::placeholder {
     width: 50px;
     height: 50px;
     background-size: contain;
-    background-image: url(/img/main/white-brusg.svg);
+    background-image: url(../img/main/white-brusg.svg);
     background-repeat: no-repeat;
   }
 
@@ -10331,7 +10327,7 @@ input::placeholder {
     width: 36px;
     height: 91px;
     background-size: contain;
-    background-image: url(/img/main/white-arrow.svg);
+    background-image: url(../img/main/white-arrow.svg);
     background-repeat: no-repeat;
   }
 
@@ -10384,7 +10380,7 @@ input::placeholder {
     left: 58px;
     width: 1px;
     height: 79px;
-    background-image: url(/img/main/tree.svg);
+    background-image: url(../img/main/tree.svg);
     background-size: cover;
   }
 
