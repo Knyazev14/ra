@@ -10623,7 +10623,7 @@ input::placeholder {
 
   .modal-overlay .hear__card {
     width: 1210px;
-    min-height: 735px;
+    min-height: 690px;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
