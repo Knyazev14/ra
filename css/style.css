@@ -6657,6 +6657,74 @@ input::placeholder {
   z-index: 2;
 }
 
+.main-banner {
+  margin-bottom: 86px;
+}
+
+.main-banner__container {
+  max-width: 345px;
+  margin: 0 auto;
+}
+
+.main-banner__body {
+  margin-top: 84px;
+  width: 100%;
+  background-repeat: no-repeat;
+  min-height: 626px;
+  border-radius: 35px;
+  padding-left: 13px;
+}
+
+.main-banner__titles {
+  font-family: Nunito;
+  position: relative;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 42px;
+  max-width: 330px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-banner__titles::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  background-size: contain;
+  height: 38px;
+  width: 172px;
+  background-image: url(../img/main/before-main.svg);
+  background-repeat: no-repeat;
+}
+
+.main-banner__titles::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  right: 63px;
+  background-size: contain;
+  height: 39px;
+  width: 123px;
+  background-image: url(../img/main/after-main.svg);
+  background-repeat: no-repeat;
+}
+
+.main-banner__text {
+  color: #ffffff;
+  font-family: Jost;
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 295px;
+}
+
+.main-banner__img {
+  position: absolute;
+  width: 225px;
+  right: -13px;
+  bottom: 0;
+}
+
 .sales-card__img-hover {
   display: none;
 }
@@ -7692,6 +7760,52 @@ input::placeholder {
   #tail2 {
     top: 111px;
     left: 101px;
+  }
+
+  .main-banner {
+    margin-bottom: 112px;
+  }
+
+  .main-banner__container {
+    max-width: 710px;
+  }
+
+  .main-banner__body {
+    min-height: 789px;
+    background-size: cover;
+  }
+
+  .main-banner__titles {
+    font-size: 75px;
+    line-height: 85px;
+    max-width: 657px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+  }
+
+  .main-banner__titles::before {
+    top: -3px;
+    left: -13px;
+    height: 95px;
+    width: 380px;
+  }
+
+  .main-banner__titles::after {
+    bottom: 8px;
+    right: 75px;
+    height: 81px;
+    width: 267px;
+  }
+
+  .main-banner__text {
+    font-size: 30px;
+    line-height: 36px;
+    max-width: 440px;
+  }
+
+  .main-banner__img {
+    width: 350px;
+    right: -15px;
   }
 }
 
@@ -9729,68 +9843,32 @@ input::placeholder {
 
   .main-banner__container {
     max-width: 1365px;
-    margin: 0 auto;
     padding-left: 35px;
   }
 
   .main-banner__body {
     margin-top: 94px;
     min-height: 767px;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     border-radius: 45px;
     padding-left: 80px;
   }
 
-  .main-banner__title {
-    max-width: 657px;
-    font-family: Nunito;
-    font-weight: 700;
-    font-size: 75px;
-    line-height: 85px;
-    color: #ffffff;
-    margin-bottom: 25px;
-    position: relative;
-  }
-
-  .main-banner__title::before {
-    content: "";
-    position: absolute;
-    top: 92px;
-    left: 0;
-    background-size: contain;
-    height: 80px;
-    width: 364px;
-    background-image: url(../img/main/before-main.svg);
-    background-repeat: no-repeat;
-  }
-
-  .main-banner__title::after {
-    content: "";
-    position: absolute;
-    bottom: 8px;
-    right: 75px;
-    background-size: contain;
-    height: 81px;
-    width: 267px;
-    background-image: url(../img/main/after-main.svg);
-    background-repeat: no-repeat;
+  .main-banner__titles {
+    margin-top: 0;
   }
 
   .main-banner__text {
-    font-family: Jost;
     font-weight: 300;
     font-size: 33px;
     line-height: 40px;
-    color: #ffffff;
     max-width: 637px;
   }
 
   .main-banner__img {
-    position: absolute;
     right: -32px;
-    bottom: 0;
+    width: auto;
   }
 
   .sales {
