@@ -6927,13 +6927,15 @@ input::placeholder {
 
 .hear {
   position: relative;
+  margin-bottom: 146px;
 }
 
 .hear__bg-1 {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -124px;
+  left: -33px;
   z-index: -1;
+  width: 314px;
   opacity: 0.5;
 }
 
@@ -6952,6 +6954,7 @@ input::placeholder {
   font-weight: 700;
   text-align: center;
   margin: 0 auto 35px;
+  position: relative;
 }
 
 .hear__title span:nth-child(2) {
@@ -6961,11 +6964,15 @@ input::placeholder {
   -webkit-text-fill-color: transparent;
 }
 
+.hear__tile-span {
+  position: relative;
+}
+
 .hear__tile-span::before {
   content: "";
   position: absolute;
   top: -23px;
-  left: 156px;
+  left: 50px;
   width: 54px;
   height: 47px;
   background-size: contain;
@@ -7050,6 +7057,40 @@ input::placeholder {
   opacity: 0.6;
 }
 
+.hear__tight-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hear__right-rating-top {
+  font-weight: 700;
+  font-size: 29px;
+  margin-bottom: 5px;
+}
+
+.hear__right-rating-all {
+  font-size: 29px;
+}
+
+.hear__btn {
+  margin-top: 25px;
+  font-family: Nunito;
+  font-size: 26px;
+  line-height: 36px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
 .hear__slider {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7057,6 +7098,7 @@ input::placeholder {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 40px;
 }
 
 .hear__slider .reviews__slider {
@@ -10447,6 +10489,9 @@ input::placeholder {
 
   .hear__bg-1 {
     top: -140px;
+    top: 0;
+    left: 0;
+    width: auto;
   }
 
   .hear__bg-2 {
@@ -10458,10 +10503,6 @@ input::placeholder {
     line-height: 85px;
     max-width: 850px;
     margin: 0 auto 25px;
-  }
-
-  .hear__tile-span {
-    position: relative;
   }
 
   .hear__tile-span::before {
@@ -10604,40 +10645,10 @@ input::placeholder {
     max-height: 306px;
   }
 
-  .hear__tight-top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
-  .hear__right-rating-top {
-    font-weight: 700;
-    font-size: 29px;
-    margin-bottom: 5px;
-  }
-
-  .hear__right-rating-all {
-    font-size: 29px;
-  }
-
   .hear__btn {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    margin-top: 25px;
-    font-family: Nunito;
-    font-size: 26px;
-    line-height: 36px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 
   .hear__btn-arrow {
