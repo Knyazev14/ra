@@ -3152,8 +3152,8 @@ input::placeholder {
   display: inline-block;
   font-size: 0;
   position: relative;
-  width: 100px;
-  height: 20px;
+  width: 100px !important;
+  height: 24px !important;
   overflow: hidden;
 }
 
@@ -7015,6 +7015,8 @@ input::placeholder {
   transition: transform 0.5s ease, box-shadow 0.3s ease, -webkit-transform 0.5s ease, -webkit-box-shadow 0.3s ease;
   -webkit-perspective: 1000px;
           perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 
 .hear__text-hidden {
@@ -7171,6 +7173,9 @@ input::placeholder {
   visibility: visible;
   overflow: visible;
   padding-bottom: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .result__item.active .result__item-title::before {
@@ -7231,11 +7236,9 @@ input::placeholder {
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
+  display: none;
   padding-bottom: 56px;
   padding-bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   -webkit-transition: height 0.3s ease;
   -o-transition: height 0.3s ease;
@@ -11087,10 +11090,6 @@ input::placeholder {
             flex: 0 0 376px;
     margin-bottom: 26px;
     max-height: 280px;
-    -webkit-transform-style: preserve-3d;
-            transform-style: preserve-3d;
-    -webkit-perspective: 1000px;
-            perspective: 1000px;
   }
 
   .hear__card.hidden {
@@ -11329,6 +11328,9 @@ input::placeholder {
   }
 
   .result__item-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-left: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
