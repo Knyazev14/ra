@@ -181,7 +181,7 @@ span {
 }
 
 a {
-  color: black;
+  display: inline-block;
 }
 
 /*--------------------------------------------*/
@@ -6821,6 +6821,7 @@ input::placeholder {
   line-height: 30px;
   max-width: 243px;
   margin-bottom: 22px;
+  color: #454545;
 }
 
 .sales-card__title::before {
@@ -6835,6 +6836,7 @@ input::placeholder {
 }
 
 .sales-card__text {
+  color: #454545;
   font-size: 18px;
   line-height: 26px;
   max-width: 248px;
