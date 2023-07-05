@@ -4,12 +4,16 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230617141519" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230617141519">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230705153007" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230705153007">
 	<title>Salesforce Implementation </title>
 </head>
 	<body>
 		<style>
+			.faq-impl .faq__title::before {
+    top: -10px;
+    right: 58px;
+}
 			@media(min-width:1440px){
 					.choose__slide-title {
 	display: flex;
@@ -23,6 +27,7 @@
 	font-size: 24px;
 	line-height: 34px;
 }
+
 			}
 		
 		</style>
@@ -276,7 +281,7 @@
 					<div class="main-circle2__list-left">
 						<img class="main-circle2__list-img" src="img/circ2.svg" alt="Sales Cloud">
 						<h6 class="main-circle2__list-title">Service Cloud & FSL</h6>
-						<p class="main-circle2__list-txt">A customer service platform to enhance customer satisfaction, retention, and productivity by automating customer service and providing personalized and prompt assistance.</p>
+						<p class="main-circle2__list-txt">A customer service platform to enhance customer satisfaction, retention, and productivity by automating customer service and providing personalized and prompt assistance. lore</p>
 					</div>
 				</div>
 				<div class="swiper-slide main-circle2__slide">
@@ -299,13 +304,17 @@
 						<img class="main-circle2__list-img" src="img/circ5.svg" alt="Sales Cloud">
 						<h6 class="main-circle2__list-title">Einstein</h6>
 						<p class="main-circle2__list-txt">A set of AI technologies for CRM across Sales, Services and Marketing to build custom predictions and recommendations, and embed predictive insights.</p>
+						
 					</div>
 				</div>
+				
+				
+			</div>
+			<div class="circle__navigation">
+				<div class="swiper-button-prev main-circle2__prev"></div>
 				<div class="swiper-pagination main-circle2__pagination"></div>
 				<div class="swiper-button-next main-circle2__next"></div>
-				<div class="swiper-button-prev main-circle2__prev"></div>
 			</div>
-
 		</div>
 	</div>
 </section>
@@ -1164,61 +1173,50 @@
 
 				<section class="pre-footer">
 	<div class="container">
-		<div class="pre-footer__body wow animate__animated animate__fadeInUp">
-			<div class="pre-footer__top">
-				<h3 class="pre-footer__title title">We Salesforce your business</h3>
-			</div>
-			<div class="pre-footer__bottom">
-				<div class="pre-footer__form">
-					<div class="pre-footer__form-top">
-						<label class="pre-footer__label">
-							<span>Name<span class="grad">*</span></span>
-							<input class="pre-footer__input" type="text" placeholder="Mr Smith">
-						</label>
-						<label class="pre-footer__label">
-							<span>Email<span class="grad">*</span></span>
-							<input class="pre-footer__input" type="text" placeholder="mrsmith@example.com">
-						</label>
-					</div>
-					<div class="pre-footer__form-bot">
-						<label class="pre-footer__label pre-footer__switch">
-							<span>I’m a Salesforce user</span>
-							<label class="switch">
-								<input type="checkbox">
-								<span class="switch-slider round"></span>
-							</label>
-						</label>
-						<label class="pre-footer__label">
-							<span>Message</span>
-							<input class="pre-footer__input w-100 pre-footer__textarea" type="text" placeholder="I am looking for a CRM solution for my project">
-						</label>
-					</div>
-					<div class="pre-footer__items">
-						<div class="pre-footer__item-left">
-							<label class="pre-footer__item-file">
-								<img class="pre-footer__img-icon" src="img/pre-footer-icon.svg" alt="icon">
-								<div class="pre-footer__item-blocks">
-									<div class="pre-footer__item-title">Attach your file</div>
-									<div class="pre-footer__item-txt">Up to 20 MB</div>
-								</div>
-								<input class="pre-footer__files" type="file">
-							</label>
-						</div>
-						<div class="pre-footer__item-right">
-								<p class="sf-provide__pol pre-footer__pol">By clicking the 'Send' button, you agree that Routine Automation will process your personal information in accordance with our <a class="pol-link pol-link-gold" href="/">Privacy Policy</a>.</p>
-								<label class="pre-footer__item-pol">
-									<input class="pre-footer__radio" type="checkbox">
-									<span class="pre-footer__item-pol2">I would like to be contacted with news and updates about your events and services</span>
-								</label>
-						</div>
-					</div>
-				
-					<button class="pre-footer__form-btn"><span>Send</span></button>
-				</div>
-			</div>
+	  <div class="pre-footer__body">
+		<div class="pre-footer__top">
+		  <h3 class="pre-footer__title title">We Salesforce your business</h3>
 		</div>
+		<div class="pre-footer__bottom">
+		  <div class="pre-footer__form">
+			<div class="pre-footer__form-top">
+			  <label class="pre-footer__label">
+				<span>Name<span class="grad">*</span></span>
+				<input class="pre-footer__input" type="text" placeholder="Mr Smith">
+			  </label>
+			  <label class="pre-footer__label">
+				<span>Email<span class="grad">*</span></span>
+				<input class="pre-footer__input" type="text" placeholder="mrsmith@example.com">
+			  </label>
+			</div>
+			<div class="pre-footer__form-bot">
+			  <label class="pre-footer__label pre-footer__switch">
+				<span>I’m a Salesforce user</span>
+				<label class="switch">
+				  <input type="checkbox">
+				  <span class="switch-slider round"></span>
+				</label>
+			  </label>
+			  <label class="pre-footer__label">
+				<span>Message<span class="grad">*</span></span>
+				<input class="pre-footer__input w-100 pre-footer__textarea" type="text" placeholder="I am looking for a CRM solution for my project">
+			  </label>
+			</div>
+			<div class="pre-footer__items">
+			  <div class="pre-footer__items-left">
+				 <p class="sf-provide__pol pre-footer__pol">By clicking the 'Send' button, you agree that Routine Automation will process your personal information in accordance with our <a class="pol-link pol-link-gold" href="/">Privacy Policy</a>.</p>
+				  <label class="pre-footer__item-pol">
+					<input class="pre-footer__radio" type="checkbox">
+					<span class="pre-footer__item-pol2">I would like to be contacted with news and updates about your events and services</span>
+				  </label>
+			   </div>
+			  </div>
+			<button class="pre-footer__form-btn"><span>Send</span></button>
+		  </div>
+		</div>
+	  </div>
 	</div>
-</section>
+  </section>
 			</main>
 			<footer class="footer">
 	<div class="container">
@@ -1258,7 +1256,7 @@
 </footer>
 
 		</div>
-		<script src="js/app.min.js?_v=20230617141519"></script>
+		<script src="js/app.min.js?_v=20230705153007"></script>
 	</body>
 </html>
 !
