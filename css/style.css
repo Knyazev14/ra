@@ -6956,8 +6956,8 @@ input::placeholder {
 .simple__title {
   font-family: Nunito;
   font-weight: 700;
-  font-size: 43px;
-  line-height: 48px;
+  font-size: 35px;
+  line-height: 42px;
   text-align: center;
   max-width: 280px;
   margin: 0 auto 85px;
@@ -6982,8 +6982,8 @@ input::placeholder {
 .simple__title span::after {
   content: "";
   position: absolute;
-  top: 48px;
-  right: 40px;
+  top: 39px;
+  right: 58px;
   background-image: url(../img/main/simple-circle.svg);
   width: 150px;
   height: 47px;
@@ -7058,8 +7058,8 @@ input::placeholder {
 }
 
 .hear__title {
-  font-size: 43px;
-  line-height: 48px;
+  font-size: 35px;
+  line-height: 42px;
   font-family: Nunito;
   font-weight: 700;
   text-align: center;
@@ -7233,16 +7233,16 @@ input::placeholder {
   font-family: Nunito;
   font-weight: 700;
   text-align: center;
-  margin: 0 auto 25px;
+  margin: 0 auto 12px;
 }
 
 .result__title span::before {
   content: "";
   position: absolute;
-  top: -5px;
-  right: 38px;
-  width: 130px;
-  height: 41px;
+  top: -11px;
+  right: 33px;
+  width: 168px;
+  height: 53px;
   background: url(../img/main/real-circle.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -8739,8 +8739,8 @@ input::placeholder {
   }
 
   .result__title span::before {
-    width: 210px;
-    height: 65px;
+    width: 265px;
+    height: 84px;
     right: 32px;
   }
 
@@ -11347,14 +11347,14 @@ input::placeholder {
 
   .result__title span::before {
     top: -5px;
-    right: 18px;
-    width: 288px;
-    height: 90px;
+    right: 183px;
+    width: 297px;
+    height: 94px;
   }
 
   .result__title span::after {
-    top: 50px;
-    right: -30px;
+    top: 149px;
+    right: 3px;
     width: 40px;
     height: 75px;
   }
