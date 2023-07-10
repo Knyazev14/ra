@@ -5361,6 +5361,7 @@ input::placeholder {
 }
 
 .industries-filter__txt {
+  cursor: pointer;
   background: -o-linear-gradient(359.89deg, rgba(60, 160, 210, 0.2) 10.38%, rgba(72, 220, 166, 0.2) 97.95%), #ffffff;
   background: linear-gradient(90.11deg, rgba(60, 160, 210, 0.2) 10.38%, rgba(72, 220, 166, 0.2) 97.95%), #ffffff;
   border-radius: 14px 0px 0px 14px;
@@ -5378,6 +5379,31 @@ input::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.industries-filter__txt::-webkit-input-placeholder {
+  font-size: 25px;
+  color: #454545;
+}
+
+.industries-filter__txt::-moz-placeholder {
+  font-size: 25px;
+  color: #454545;
+}
+
+.industries-filter__txt:-ms-input-placeholder {
+  font-size: 25px;
+  color: #454545;
+}
+
+.industries-filter__txt::-ms-input-placeholder {
+  font-size: 25px;
+  color: #454545;
+}
+
+.industries-filter__txt::placeholder {
+  font-size: 25px;
+  color: #454545;
 }
 
 .industries-filter__btn {
@@ -10247,6 +10273,12 @@ input::placeholder {
 
   .industries-filter__options {
     max-width: 698px;
+  }
+
+  .gap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 380px;
+            flex: 0 0 380px;
   }
 
   .industries-cards {
