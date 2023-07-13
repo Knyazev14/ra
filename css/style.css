@@ -7957,7 +7957,7 @@ input::placeholder {
 
 .studies-case-reviews__navigation .swiper-button-next:after {
   content: "";
-  background-image: url(/img/bullets/main-next.svg);
+  background-image: url(../img/bullets/main-next.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
@@ -7969,7 +7969,7 @@ input::placeholder {
 
 .studies-case-reviews__navigation .swiper-button-prev::after {
   content: "";
-  background-image: url(/img/bullets/main-prev.svg);
+  background-image: url(../img/bullets/main-prev.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 30px;
