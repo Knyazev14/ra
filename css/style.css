@@ -7216,13 +7216,15 @@ input::placeholder {
 
 .hear__btn {
   margin-top: 25px;
-  font-family: Nunito;
+  font-family: Jost;
   font-size: 26px;
   line-height: 36px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  font-weight: 500;
+  line-height: 0;
 }
 
 .hear__slider {
@@ -7538,10 +7540,10 @@ input::placeholder {
 .result__title span::before {
   content: "";
   position: absolute;
-  top: -11px;
-  right: 33px;
-  width: 168px;
-  height: 53px;
+  top: -4px;
+  right: 40px;
+  width: 129px;
+  height: 40px;
   background: url(../img/main/real-circle.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7879,7 +7881,6 @@ input::placeholder {
   background-position: 89% center;
   overflow: hidden;
   padding: 50px 5px 50px 20px;
-  position: relative;
   position: relative;
 }
 
@@ -9980,8 +9981,9 @@ input::placeholder {
   }
 
   .result__title span::before {
-    width: 265px;
-    height: 84px;
+    width: 214px;
+    height: 68px;
+    top: -4px;
     right: 32px;
   }
 
@@ -12680,9 +12682,17 @@ input::placeholder {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    font-size: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .hear__btn-arrow {
+    margin-top: 5px;
     margin-left: 15px;
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -12900,14 +12910,14 @@ input::placeholder {
 
   .result__title span::before {
     top: -5px;
-    right: 183px;
+    right: 15px;
     width: 297px;
     height: 94px;
   }
 
   .result__title span::after {
-    top: 149px;
-    right: 3px;
+    top: 74px;
+    right: -31px;
     width: 40px;
     height: 75px;
   }
