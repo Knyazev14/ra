@@ -2891,6 +2891,8 @@ input::placeholder {
   position: relative;
   margin-bottom: 30px;
   line-height: 1;
+  margin-top: 17px;
+  padding-bottom: 8px;
 }
 
 .footer-2 .footer__logo {
@@ -3540,6 +3542,10 @@ input::placeholder {
 .stories__slide-wrap.swiper-slide-active:hover::before {
   opacity: 1;
   visibility: visible;
+}
+
+.stories__slide-wrap.swiper-slide-active:hover .stories__slide-bottom {
+  max-height: 199px;
 }
 
 .stories__slide-wrap {
@@ -9190,7 +9196,7 @@ input::placeholder {
   height: 350px;
   position: relative;
   padding: 40px 10px 10px 35px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .discover-card:hover .discover-card__front-bg {
@@ -9265,6 +9271,11 @@ input::placeholder {
 
 .benefits-section .studies-case-reviews__bg-1 {
   top: -240px;
+  opacity: 1;
+}
+
+.benefits-section .studies-case-reviews__bg-2 {
+  opacity: 1;
 }
 
 .benefits-section__title {
@@ -13928,6 +13939,7 @@ input::placeholder {
   .benefits-section__title {
     font-size: 70px;
     line-height: 80px;
+    margin-bottom: 15px;
   }
 
   .benefits-section__title::before {
